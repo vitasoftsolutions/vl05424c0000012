@@ -8,3 +8,13 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
+
+var currentPageUrl = window.location.href;
+
+// Check if the current page URL matches the URL of the "Home" link
+if (currentPageUrl.endsWith("index.html") || currentPageUrl.endsWith("/")) {
+  // Add the 'active' class to the 'nav-link' element of the "Home" link
+  document
+    .querySelector('.navbar-nav .nav-link[href="index.html"]')
+    .classList.add("active");
+}
