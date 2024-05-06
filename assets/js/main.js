@@ -18,7 +18,3 @@ if (currentPageUrl.endsWith("index.html") || currentPageUrl.endsWith("/")) {
     .querySelector('.navbar-nav .nav-link[href="index.html"]')
     .classList.add("active");
 }
-
-// document.querySelector(".menu-toggle").addEventListener("click", () => {
-//   document.querySelector(".navbar-nav").classList.toggle("active");
-// });

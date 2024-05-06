@@ -1,0 +1,124 @@
+.location-section {
+  background-color: #87ceeb;
+  /* color: white; */
+}
+
+.location-title {
+  text-align: center;
+  color: white;
+}
+
+.location-title h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.location-grid {
+  padding: 30px;
+}
+
+.location-cards {
+  padding-top: 30px;
+}
+
+.card-item {
+  display: flex;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+}
+
+.card-body {
+  padding: 0px;
+  border-radius: 0;
+}
+
+.card-text h3 {
+  font-size: large;
+}
+.card-text p {
+  font-size: 0.8rem;
+  margin: 0px;
+}
+
+.card-item img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 0;
+  height: 100px;
+}
+
+.booking__card {
+  width: 100%;
+  max-width: 300px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 7px;
+  box-shadow: 5px 5px 50px hsl(0, 0%, 80%);
+  transition: all 0.2s ease;
+}
+.booking__card:hover {
+  transform: scale(1.015);
+}
+.booking__card--image {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px 7px 0 0;
+}
+.booking__info {
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5em;
+}
+.booking__info--top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.booking__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 50%);
+}
+
+.booking__info--middle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.booking__card--divider {
+  width: 100%;
+  height: 2px;
+  background: hsl(0, 0%, 90%);
+}
+.booking__price {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: hsl(0, 0%, 25%);
+}
+.booking__description {
+  font-size: 1rem;
+  color: hsl(0, 0%, 50%);
+}
+.booking__promotion {
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 55%);
+}
+
+.booking__info--bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5em;
+}

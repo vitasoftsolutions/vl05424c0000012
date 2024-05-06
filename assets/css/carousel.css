@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.95); /* 95% opaque white */
+  font-family: "Inter", sans-serif;
+}
+
+.carousel__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr max-content;
+  grid-template-areas:
+    "title nav"
+    "carousel carousel";
+  position: relative;
+  width: 100%;
+  height: max-content;
+  gap: 2rem 0;
+  align-items: center;
+}
+
+.carousel__header {
+  grid-area: title;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+.carousel__subheader {
+  grid-area: title;
+  font-weight: 200;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  padding-top: 80px;
+}
+
+.carousel {
+  grid-area: carousel;
+  position: relative;
+  overflow-x: clip;
+}
+
+.carousel__item {
+  position: absolute;
+  padding: 2rem;
+  border-radius: 12px;
+  /*   border: 1px solid #999; */
+  background: #eee;
+  top: 0;
+  transition: all ease-in-out 400ms;
+  display: grid;
+  place-items: center;
+
+  &:hover {
+    cursor: pointer;
+    top: -0.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.carousel__item__name {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.carousel__item > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem 0;
+}
+
+/* Colors for different flavors */
+.carousel__item--mango {
+  background-color: #b39b00;
+}
+
+.carousel__item--vanilla {
+  background-color: #8c693e;
+}
+
+.carousel__item--strawberry {
+  background-color: #905454;
+}
+
+.carousel__item--matcha {
+  background-color: #9abd8b;
+}
+
+.carousel__item--chocolate {
+  background-color: #969692;
+}
+
+/* Caousel Nav */
+.carousel__nav {
+  grid-area: nav;
+  justify-self: end;
+  display: flex;
+  justify-content: center;
+  gap: 0 1rem;
+}
+
+.carousel__nav__item {
+  padding: 0.375rem;
+  border: 1px solid #eee;
+  border-radius: 24px;
+  background-color: #e5e5e5;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 0;
+}
+
+.carousel__nav__item:hover {
+  background-color: #cacacb;
+}

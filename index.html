@@ -9,68 +9,101 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    /> -->
+
+    <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/carousel.css" />
+    <link rel="stylesheet" href="/assets/css/swiper.css" />
+    <link rel="stylesheet" href="/assets/css/location.css" />
+    <link rel="stylesheet" href="/assets/css/latest.css" />
   </head>
 
-  <body class="hwad">
-    <!-- <div class="container-lg">hello world</div>
-     -->
-
-    <header class="header fixed-top">
+  <body class="">
+    <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-lg">
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
+            data-bs-toggle="offcanvas"
             data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="28"
+              height="28"
+              fill="rgba(96,190,228,1)"
+            >
+              <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"></path>
+            </svg>
           </button>
 
           <a class="navbar-brand" href="/home">Lend Me V1.0 (PMG)</a>
 
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/category">Category</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about-us">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact-us">Contact Us</a>
-              </li>
-              <li class="nav-item d-md-block d-lg-none">
-                <button type="button" class="default-btn">Sign Up</button>
-              </li>
-              <li class="nav-item d-md-block d-lg-none">
-                <button type="button" class="primary-btn margin-top">
-                  Sign In
-                </button>
-              </li>
-            </ul>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="navbarNavDropdown"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav center-flex">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item d-md-block d-lg-none margin-top">
+                  <button type="button" class="default-btn">Sign Up</button>
+                </li>
+                <li class="nav-item d-md-block d-lg-none margin-top">
+                  <button type="button" class="primary-btn">Sign In</button>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <!-- Buttons for Sign Up and Sign In -->
-          <div class="d-none d-lg-block">
+          <div class="sign-btn">
             <!-- Hide on large devices -->
             <button type="button" class="default-btn">Sign Up</button>
             <button type="button" class="primary-btn">Sign In</button>
@@ -79,10 +112,446 @@
       </nav>
     </header>
 
+    <!-- banner section -->
+
+    <main>
+      <section class="banner-section">
+        <div class="banner-section-img">
+          <div class="container-lg">
+            <div class="flex-col banner-text">
+              <div class="explore">Explore top-rated attractions</div>
+              <div class="letus">Let us help you</div>
+              <div class="letus find-lend">
+                Find, Lend <span class="gain">& Gain Needs</span>
+              </div>
+              <div class="country">
+                Countrys most loved and trusted classified ad listing website
+                classified ad.randomised words which don't look even slightly
+                Browse thousand of items near you.
+              </div>
+
+              <!-- <div class="search"> -->
+              <form action="#" class="search" id="searchForm">
+                <div class="search-input line">
+                  <div class="form-group mb-0">
+                    <select
+                      title="Chose Category"
+                      class="form-control select category-select"
+                    >
+                      <option value="">Choose Category</option>
+                      <option value="1">Computer</option>
+                      <option value="2">Automobile</option>
+                      <option value="3">Car Wash</option>
+                      <option value="4">Cleaning</option>
+                      <option value="5">Electrical</option>
+                      <option value="6">Construction</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="button" class="primary-btn category-search">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="search-icon"
+                  >
+                    <path
+                      d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"
+                    ></path></svg
+                  >Search
+                </button>
+              </form>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-lg our-category">
+        <div class="category">
+          <div class="carousel__wrapper">
+            <h1 class="carousel__header">Our Category</h1>
+            <p class="carousel__subheader">
+              Lend anything from Our Top Category
+            </p>
+
+            <div class="carousel__nav">
+              <div class="carousel__nav__item" data-direction="prev">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  width="24px"
+                  height="24px"
+                  fill="none"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    d="M15.525 18.966L8.558 12l6.967-6.967"
+                  ></path>
+                </svg>
+              </div>
+              <div class="carousel__nav__item" data-direction="next">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  width="24px"
+                  height="24px"
+                  fill="none"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    d="M8.474 18.966L15.44 12 8.474 5.033"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="carousel">
+              <div class="carousel__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+              <div class="carousel__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M7 4V20H17V4H7ZM6 2H18C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2ZM12 17C12.5523 17 13 17.4477 13 18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17Z"
+                  ></path>
+                </svg>
+                <span>Mobile</span>
+              </div>
+              <div class="carousel__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M4 5V16H20V5H4ZM2 4.00748C2 3.45107 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44892 22 4.00748V18H2V4.00748ZM1 19H23V21H1V19Z"
+                  ></path>
+                </svg>
+                <span>Laptop</span>
+              </div>
+              <div class="carousel__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M3 18.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H6.5C4.567 22 3 20.433 3 18.5ZM19 20V17H6.5C5.67157 17 5 17.6716 5 18.5C5 19.3284 5.67157 20 6.5 20H19ZM5 15.3368C5.45463 15.1208 5.9632 15 6.5 15H19V4H6C5.44772 4 5 4.44772 5 5V15.3368Z"
+                  ></path>
+                </svg>
+                <span>Books</span>
+              </div>
+              <div class="carousel__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M4 16H20V5H4V16ZM13 18V20H17V22H7V20H11V18H2.9918C2.44405 18 2 17.5511 2 16.9925V4.00748C2 3.45107 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44892 22 4.00748V16.9925C22 17.5489 21.5447 18 21.0082 18H13Z"
+                  ></path>
+                </svg>
+                <span>PC</span>
+              </div>
+              <div class="carousel__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M8.36547 10L11.2 8H14.6915L13.5996 5H11V3H15L16.0919 6H20V9H17.1838L18.6405 13.0022C21.0608 13.0764 23 15.0617 23 17.5C23 19.9853 20.9853 22 18.5 22C16.0147 22 14 19.9853 14 17.5C14 15.6722 15.0897 14.0989 16.6549 13.3944L15.4194 10H14.4718L12.89 15.87L9.96536 16.9389C9.98822 17.1227 10 17.31 10 17.5C10 19.9853 7.98528 22 5.5 22C3.01472 22 1 19.9853 1 17.5C1 15.5407 2.25221 13.8738 4 13.2561V12H2V10H8.36547ZM5.5 20C6.88071 20 8 18.8807 8 17.5C8 16.1193 6.88071 15 5.5 15C4.11929 15 3 16.1193 3 17.5C3 18.8807 4.11929 20 5.5 20ZM18.5 20C19.8807 20 21 18.8807 21 17.5C21 16.1193 19.8807 15 18.5 15C17.1193 15 16 16.1193 16 17.5C16 18.8807 17.1193 20 18.5 20Z"
+                  ></path>
+                </svg>
+                <span>Bikes</span>
+              </div>
+              <div class="carousel__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM6 19H18V9.15745L12 3.7029L6 9.15745V19ZM9 9.99998H15V16H9V9.99998ZM11 12V14H13V12H11Z"
+                  ></path>
+                </svg>
+                <span>Home</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-section">
+        <div class="container-lg featured-grid">
+          <div class="carousel__wrapper">
+            <div class="carousel__header">Featured Items</div>
+            <p class="carousel__subheader">
+              Checkout these latest coo Items from our members
+            </p>
+
+            <div class="carousel__nav">
+              <div class="carousel__nav__item btn-prev">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  width="24px"
+                  height="24px"
+                  fill="none"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    d="M15.525 18.966L8.558 12l6.967-6.967"
+                  ></path>
+                </svg>
+              </div>
+              <div class="carousel__nav__item btn-next">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  width="24px"
+                  height="24px"
+                  fill="none"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    d="M8.474 18.966L15.44 12 8.474 5.033"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- Slider main container -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide border-2">Slide 1</div>
+              <div class="swiper-slide border-2">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-section">
+        <div class="container-lg location-grid">
+          <div class="location-title">
+            <h2>Popular Location</h2>
+            <p>
+              Start by selecting your favuorite location and explore the goods
+            </p>
+            <!-- <p>Please log in to access this page.</p> -->
+          </div>
+
+          <div class="location-cards">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="booking__card">
+                  <img
+                    src="https://content.r9cdn.net/rimg/dimg/c9/06/8d4fe0d8-city-28030-164fcc85915.jpg?crop=true&width=1020&height=498"
+                    alt=""
+                    class="booking__card--image"
+                    alt="flight"
+                  />
+                  <div class="booking__info">
+                    <div class="booking__info--middle">
+                      <p class="booking__price">Dhaka</p>
+                      <p>10 Items posted</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="booking__card">
+                  <img
+                    src="https://content.r9cdn.net/rimg/dimg/c9/06/8d4fe0d8-city-28030-164fcc85915.jpg?crop=true&width=1020&height=498"
+                    alt=""
+                    class="booking__card--image"
+                    alt="flight"
+                  />
+                  <div class="booking__info">
+                    <div class="booking__info--middle">
+                      <p class="booking__price">Dhaka</p>
+                      <p>10 Items posted</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="booking__card">
+                  <img
+                    src="https://content.r9cdn.net/rimg/dimg/c9/06/8d4fe0d8-city-28030-164fcc85915.jpg?crop=true&width=1020&height=498"
+                    alt=""
+                    class="booking__card--image"
+                    alt="flight"
+                  />
+                  <div class="booking__info">
+                    <div class="booking__info--middle">
+                      <p class="booking__price">Dhaka</p>
+                      <p>10 Items posted</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="booking__card">
+                  <img
+                    src="https://content.r9cdn.net/rimg/dimg/c9/06/8d4fe0d8-city-28030-164fcc85915.jpg?crop=true&width=1020&height=498"
+                    alt=""
+                    class="booking__card--image"
+                    alt="flight"
+                  />
+                  <div class="booking__info">
+                    <div class="booking__info--middle">
+                      <p class="booking__price">Dhaka</p>
+                      <p>10 Items posted</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="booking__card">
+                  <img
+                    src="https://content.r9cdn.net/rimg/dimg/c9/06/8d4fe0d8-city-28030-164fcc85915.jpg?crop=true&width=1020&height=498"
+                    alt=""
+                    class="booking__card--image"
+                    alt="flight"
+                  />
+                  <div class="booking__info">
+                    <div class="booking__info--middle">
+                      <p class="booking__price">Dhaka</p>
+                      <p>10 Items posted</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="booking__card">
+                  <img
+                    src="https://content.r9cdn.net/rimg/dimg/c9/06/8d4fe0d8-city-28030-164fcc85915.jpg?crop=true&width=1020&height=498"
+                    alt=""
+                    class="booking__card--image"
+                    alt="flight"
+                  />
+                  <div class="booking__info">
+                    <div class="booking__info--middle">
+                      <p class="booking__price">Dhaka</p>
+                      <p>10 Items posted</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="booking__card">
+                  <img
+                    src="https://content.r9cdn.net/rimg/dimg/c9/06/8d4fe0d8-city-28030-164fcc85915.jpg?crop=true&width=1020&height=498"
+                    alt=""
+                    class="booking__card--image"
+                    alt="flight"
+                  />
+                  <div class="booking__info">
+                    <div class="booking__info--middle">
+                      <p class="booking__price">Dhaka</p>
+                      <p>10 Items posted</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-lg">
+        <div class="border-2 latest">
+          <div class="carousel__wrapper">
+            <div class="carousel__header">Latest Items</div>
+            <p class="carousel__subheader">
+              Checkout these latest cool Items from our members
+            </p>
+          </div>
+
+
+          <div>
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="booking__card">
+                  <img
+                    src="https://content.r9cdn.net/rimg/dimg/c9/06/8d4fe0d8-city-28030-164fcc85915.jpg?crop=true&width=1020&height=498"
+                    alt=""
+                    class="booking__card--image"
+                    alt="flight"
+                  />
+                  <div class="booking__info">
+                    <div class="booking__info--middle">
+                      <p class="booking__price">Dhaka</p>
+                      <p>10 Items posted</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+
+    <!-- <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script> -->
   </body>
 </html>

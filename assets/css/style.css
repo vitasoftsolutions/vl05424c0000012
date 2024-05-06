@@ -3,8 +3,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #374b5c;
-  /* font-weight: 100; */
-  /* font-size: 70px; */
+
+  height: 200vh;
 }
 
 ::-webkit-scrollbar {
@@ -20,18 +20,13 @@ body {
 }
 
 .header {
-  /* border: 2px solid red; */
-  text-align: center;
-  box-shadow: 0px 3px 53px rgb(197 197 197 / 27%);
-  padding: 20px 0px;
-}
-
-.header .fixed-top {
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
+  background-color: white;
   z-index: 9999;
+  transition: 0.5s;
 }
 
 .navbar {
@@ -39,17 +34,181 @@ body {
   font-weight: 500;
 }
 
-.navbar-collapse {
-  /* display: flex;
-  width: 100%;
-  border: 2px solid red;
-  justify-content: space-between;
-  align-items: center; */
+.navbar-nav {
+  font-size: 16px;
 }
 
 .navbar .active {
   color: #60a5fa !important;
   font-weight: bold !important;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.sign-btn {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: block;
+}
+
+.banner-section {
+  width: 100%;
+  margin: 60px 0px 0px;
+  padding: 2px 0px;
+  z-index: -1;
+}
+
+.banner-section-img {
+  width: 100%;
+  height: 500px;
+  /* object-fit: cover; */
+
+  background-image: url("https://gemmart.arrowtheme.com/pub/media/wysiwyg/slider/home1-slide.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-text {
+  height: 100%;
+  /* width: 50%; */
+  text-wrap: wrap;
+  padding: 20px;
+  padding-top: 80px;
+}
+
+.explore {
+  font-size: clamp(0.7rem, 2vw, 4rem);
+  font-weight: 600;
+  color: white;
+  background-color: #374b5c;
+  padding: 10px 30px;
+  border-radius: 999px;
+  /* padding-top: 50px; */
+  /* margin: 0; */
+}
+
+.letus {
+  font-size: clamp(0.7rem, 3vw, 4rem);
+  font-weight: 700;
+  color: #25333b;
+  padding-left: 30px;
+  /* text gap */
+}
+.gain {
+  color: #25333b;
+  width: 80%;
+}
+
+.find-lend {
+  color: #60a5fa;
+}
+
+.country {
+  font-size: clamp(0.5rem, 1vw, 1rem);
+  padding-left: 30px;
+  width: 50%;
+}
+
+.search {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-left: 30px;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-select {
+  padding: 8px 25px;
+  border-radius: 10px;
+  /* border-color: #374b5c; */
+  color: #374b5c;
+  font-size: clamp(0.7rem, 1vw, 1.5rem) !important;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.category {
+  padding: 30px;
+}
+
+.our-category {
+  /* margin-top: 50px; */
+  display: grid;
+}
+
+.featured-section {
+  background-color: #f9fafc;
+  /* margin-bottom: 100px; */
+}
+
+.featured-grid {
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .banner-section-img {
+    height: 300px; /* Adjusted height for small devices */
+  }
+
+  .banner-text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .sign-btn {
+    display: none !important;
+  }
+  .explore {
+    padding: 10px 20px;
+  }
+  .letus {
+    padding-left: 20px;
+  }
+  .country {
+    padding-left: 20px;
+  }
+  .search {
+    padding-left: 20px;
+  }
+  .our-category {
+    padding: 10px;
+  }
+
+  .category-search {
+    padding: 5px 10px !important;
+    font-size: 0.7rem !important;
+  }
+
+  .category-select {
+    padding: 6px 10px;
+  }
+
+  .search-icon {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 /* !helper */
@@ -58,6 +217,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.start-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex-col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 5px;
+  flex-direction: column;
 }
 
 .center-flex {
@@ -77,9 +251,9 @@ body {
 .default-btn {
   background: none;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   font-weight: 600;
-  border: 1px solid #87ceeb;
+  border: 1px solid #25333b;
   font-size: 14px;
   transition: background 0.3s, color 0.3s, border 0.3s;
 
@@ -95,10 +269,15 @@ body {
   color: white;
   padding: 10px 20px;
   border: 1px solid #87ceeb;
-  border-radius: 10px;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
   transition: background 0.3s, color 0.3s, border 0.3s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 
   &:hover {
     background: #60a5fa;
@@ -111,7 +290,7 @@ body {
   margin-top: 10px;
 }
 
-.border {
+.border-2 {
   border: 2px solid black;
 }
 
