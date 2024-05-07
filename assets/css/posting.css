@@ -23,14 +23,20 @@
   height: 100%;
 }
 
-.computer {
-  width: 40rem;
-  height: 30rem;
-}
-
 @media (max-width: 992px) {
   .posting-section .row {
     flex-direction: column-reverse;
     gap: 50px;
+  }
+
+  .computer {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50%;
+    }
   }
 }
