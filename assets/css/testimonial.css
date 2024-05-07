@@ -1,0 +1,56 @@
+.testimonial-section {
+  background-image: url("../img/Google\ Ads\ \(Landscape\)\ -\ 1200x628\ -\ 14.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  color: white;
+
+  /* height: 50rem; */
+  padding: 5rem 0;
+
+  .carousel__nav__item {
+    background-color: white;
+    color: black;
+
+    &:hover {
+      background-color: #87ceeb;
+      color: white;
+      border: 1px solid #87ceeb;
+    }
+  }
+
+  .carousel__header {
+    color: white;
+    width: 50%;
+    /* font-size: 3rem; */
+    font-weight: 900;
+  }
+}
+
+.testimonialSwiper .testimonial__card {
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+.user-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  p {
+    color: #374b5c;
+  }
+}

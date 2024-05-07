@@ -6,6 +6,7 @@ class Carousel {
   size = 8; // number of items to show
   gap = 16; // in px
   activeClass = true;
+  width = 200;
   itemProps = {
     width: 0,
     left: 0,
@@ -21,7 +22,7 @@ class Carousel {
   async init() {
     await this.setMinItems();
 
-    this.itemProps.width = await this.getSize();
+    this.itemProps.width = 200;
     this.element.style.height = this.items[0].clientHeight + "px";
 
     // Add event listener to buttons
@@ -59,7 +60,7 @@ class Carousel {
 
   async build() {
     for (let i = 0; i < this.items.length; i++) {
-      this.items[i].style.width = this.itemProps.width + "px";
+      this.items[i].style.width = 200 + "px";
       // (i - 1) so we start with second item and get clean animation (hides shifting)
       this.items[i].style.left =
         (this.itemProps.width + this.gap) * (i - 1) + "px";

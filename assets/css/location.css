@@ -21,6 +21,12 @@
   padding-top: 30px;
 }
 
+.location-cards .row {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
 .card-item {
   display: flex;
 }
@@ -58,9 +64,24 @@
   max-width: 300px;
   background-color: hsl(0, 0%, 95%);
   border-radius: 7px;
+  overflow: hidden;
   box-shadow: 5px 5px 50px hsl(0, 0%, 80%);
   transition: all 0.2s ease;
+  margin: 0 auto;
+  /* display: block; */
 }
+
+@media (max-width: 768px) {
+  .booking__card {
+    display: flex;
+    max-width: 400px;
+
+    img {
+      max-width: 250px;
+    }
+  }
+}
+
 .booking__card:hover {
   transform: scale(1.015);
 }
@@ -68,7 +89,6 @@
   height: 180px;
   width: 100%;
   object-fit: cover;
-  border-radius: 7px 7px 0 0;
 }
 .booking__info {
   padding: 1.25em;

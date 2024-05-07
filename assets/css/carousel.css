@@ -114,3 +114,10 @@ body {
 .carousel__nav__item:hover {
   background-color: #cacacb;
 }
+
+@media screen and (max-width: 768px) {
+  .carousel__item {
+    padding: 20px;
+    /* width: 150px !important; */
+  }
+}

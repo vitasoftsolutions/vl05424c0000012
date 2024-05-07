@@ -1,0 +1,36 @@
+.poster {
+  padding: 50px 0px;
+  /* gap: 50px; */
+}
+
+.posting-section h1 {
+  font-weight: 700;
+  color: #25333b;
+  font-size: clamp(1.5rem, 2.5vw, 5rem);
+}
+
+.posting-section p {
+  padding-top: 10px;
+  font-size: clamp(0.7rem, 0.7vw, 1rem);
+  color: #374b5c;
+}
+
+.posting-title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+}
+
+.computer {
+  width: 40rem;
+  height: 30rem;
+}
+
+@media (max-width: 992px) {
+  .posting-section .row {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+}

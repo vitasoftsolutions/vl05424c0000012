@@ -1,4 +1,9 @@
 .swiper {
   width: 100%;
-  height: 300px;
+  height: max-content;
+}
+
+.carousel__nav__item:hover {
+  background-color: #87ceeb;
+  color: white;
 }
