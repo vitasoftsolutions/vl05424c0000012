@@ -1,11 +1,15 @@
 .contact__us_section {
-  /* padding: 100px 0; */
-  /* height: 300px; */
-
+  width: 100%;
   color: white;
+}
 
-  .col {
-    padding: 50px 0;
+@media screen and (max-width: 768px) {
+  .call {
+    flex-direction: column;
+  }
+
+  .grid_container {
+    flex-direction: column;
   }
 }
 
@@ -15,6 +19,8 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+  width: 100%;
+  padding: 50px 0;
   width: 100%;
 
   .call-icon {
@@ -36,7 +42,8 @@
 .subscribe {
   background-color: #67a866;
 
-  width: 90%;
+  width: 100%;
+  padding: 50px 50px;
   margin: 0 auto;
 
   input {
@@ -44,7 +51,7 @@
     border-radius: 20px;
     padding: 10px 20px;
     border-bottom: 1px solid white;
-    width: 100%;
+    width: max-content;
 
     &:focus {
       outline: none;
@@ -61,9 +68,9 @@
 }
 
 .grid_container {
-  padding: 0px 30px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* padding-left: 30px; */
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
   /* justify-content: space-between; */
 
   /* Two columns with equal width */
