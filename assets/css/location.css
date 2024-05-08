@@ -1,6 +1,11 @@
 .location-section {
-  background-color: #87ceeb;
+  /* background-color: #87ceeb; */
   /* color: white; */
+  background-image: url("../img/Google\ Ads\ \(Landscape\)\ -\ 1200x628\ -\ 14.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  padding: 5rem 0;
 }
 
 .location-title {
@@ -57,12 +62,10 @@
   width: 100%;
   max-width: 300px;
   background-color: hsl(0, 0%, 95%);
-  border-radius: 7px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 5px 5px 50px hsl(0, 0%, 80%);
   transition: all 0.2s ease;
   margin: 0 auto;
-  /* display: block; */
 }
 
 @media (max-width: 575px) {

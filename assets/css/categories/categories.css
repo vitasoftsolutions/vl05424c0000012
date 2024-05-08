@@ -1,0 +1,17 @@
+.card {
+  a {
+    text-decoration: none;
+    color: #374b5c !important;
+  }
+
+  .category__card {
+    padding: 50px;
+    background-color: white;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background-color: #007bff;
+      color: white;
+    }
+  }
+}

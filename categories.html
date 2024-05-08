@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/carousel.css" />
+    <link rel="stylesheet" href="/assets/css/category.css" />
+    <link rel="stylesheet" href="/assets/css/swiper.css" />
+    <link rel="stylesheet" href="/assets/css/location.css" />
+    <link rel="stylesheet" href="/assets/css/latest.css" />
+    <link rel="stylesheet" href="/assets/css/card.css" />
+    <link rel="stylesheet" href="/assets/css/posting.css" />
+    <link rel="stylesheet" href="/assets/css/testimonial.css" />
+    <link rel="stylesheet" href="/assets/css/university.css" />
+    <link rel="stylesheet" href="/assets/css/pricing.css" />
+    <link rel="stylesheet" href="/assets/css/contact.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+
+    <link rel="stylesheet" href="/assets/css/authentication/signin.css" />
+    <link rel="stylesheet" href="/assets/css/categories/categories.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-lg">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="28"
+              height="28"
+              fill="rgba(96,190,228,1)"
+            >
+              <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"></path>
+            </svg>
+          </button>
+
+          <a class="navbar-brand" href="/home">Lend Me V1.0 (PMG)</a>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="navbarNavDropdown"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav center-flex">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="categories.html">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item d-md-block d-lg-none margin-top">
+                  <a href="signup.html"
+                    ><button type="button" class="default-btn">
+                      Sign Up
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item d-md-block d-lg-none margin-top">
+                  <a href="signIn.html"
+                    ><button type="button" class="primary-btn">
+                      Sign In
+                    </button></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Buttons for Sign Up and Sign In -->
+          <div class="sign-btn">
+            <!-- Hide on large devices -->
+            <a href="signup.html"
+              ><button type="button" class="default-btn">Sign Up</button></a
+            >
+            <a href="signIn.html"
+              ><button type="button" class="primary-btn">Sign In</button></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="login-section categories-section">
+        <h1 class="text-center login-text">Listing Categories</h1>
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card">
+                <a href="category/mobile.html">
+                  <div class="category__card">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="36"
+                      height="36"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M7 4V20H17V4H7ZM6 2H18C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2ZM12 17C12.5523 17 13 17.4477 13 18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17Z"
+                      ></path>
+                    </svg>
+                    <span>Mobile</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card">
+                <div class="category__card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M4 5V16H20V5H4ZM2 4.00748C2 3.45107 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44892 22 4.00748V18H2V4.00748ZM1 19H23V21H1V19Z"
+                    ></path>
+                  </svg>
+                  <span>Laptop</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card">
+                <div class="category__card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M3 18.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H6.5C4.567 22 3 20.433 3 18.5ZM19 20V17H6.5C5.67157 17 5 17.6716 5 18.5C5 19.3284 5.67157 20 6.5 20H19ZM5 15.3368C5.45463 15.1208 5.9632 15 6.5 15H19V4H6C5.44772 4 5 4.44772 5 5V15.3368Z"
+                    ></path>
+                  </svg>
+                  <span>Books</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card">
+                <div class="category__card item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M4 16H20V5H4V16ZM13 18V20H17V22H7V20H11V18H2.9918C2.44405 18 2 17.5511 2 16.9925V4.00748C2 3.45107 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44892 22 4.00748V16.9925C22 17.5489 21.5447 18 21.0082 18H13Z"
+                    ></path>
+                  </svg>
+                  <span>PC</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card">
+                <div class="category__card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M8.36547 10L11.2 8H14.6915L13.5996 5H11V3H15L16.0919 6H20V9H17.1838L18.6405 13.0022C21.0608 13.0764 23 15.0617 23 17.5C23 19.9853 20.9853 22 18.5 22C16.0147 22 14 19.9853 14 17.5C14 15.6722 15.0897 14.0989 16.6549 13.3944L15.4194 10H14.4718L12.89 15.87L9.96536 16.9389C9.98822 17.1227 10 17.31 10 17.5C10 19.9853 7.98528 22 5.5 22C3.01472 22 1 19.9853 1 17.5C1 15.5407 2.25221 13.8738 4 13.2561V12H2V10H8.36547ZM5.5 20C6.88071 20 8 18.8807 8 17.5C8 16.1193 6.88071 15 5.5 15C4.11929 15 3 16.1193 3 17.5C3 18.8807 4.11929 20 5.5 20ZM18.5 20C19.8807 20 21 18.8807 21 17.5C21 16.1193 19.8807 15 18.5 15C17.1193 15 16 16.1193 16 17.5C16 18.8807 17.1193 20 18.5 20Z"
+                    ></path>
+                  </svg>
+                  <span>Bikes</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card">
+                <div class="category__card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM6 19H18V9.15745L12 3.7029L6 9.15745V19ZM9 9.99998H15V16H9V9.99998ZM11 12V14H13V12H11Z"
+                    ></path>
+                  </svg>
+                  <span>Home</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-top aos" data-aos="fade-up">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                  <div class="footer-logo">
+                    <a href="#"
+                      ><img src="assets/img/footerlogo.png" alt="logo"
+                    /></a>
+                  </div>
+                  <div class="footer-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt et magna aliqua.
+                    </p>
+                  </div>
+                  <div class="social-icon">
+                    <ul>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">About us</h2>
+                  <ul>
+                    <li>
+                      <a href="about.html">Our product</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="service-details.html">Our Services</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Get Started Us</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">Quick links</h2>
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)">Market Place</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Customers</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Carriers</a>
+                    </li>
+                    <li>
+                      <a href="blog-list.html">Our Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">Top Cities</h2>
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)">Manhatten</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Los Angeles</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Houston</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Chicago</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Alabama</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                  <h2 class="footer-title">Communication</h2>
+                  <div class="footer-contact-info">
+                    <div class="footer-address">
+                      <img src="assets/img/call-calling.svg" alt="Callus" />
+                      <p>
+                        <span>Call Us</span> <br />
+                        +017 123 456 78
+                      </p>
+                    </div>
+                    <div class="footer-address">
+                      <img src="assets/img/sms-tracking.svg" alt="Callus" />
+                      <p>
+                        <span>Send Message</span> <br />
+                        <a
+                          href="../cdn-cgi/l/email-protection.html"
+                          class="__cf_email__"
+                          data-cfemail="94f7fbfae0f5f7e0d4f1ecf5f9e4f8f1baf7fbf9"
+                          >[email&#160;protected]</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footercount">
+              <div class="row">
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,532</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,53264546</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,53264546</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>We Accept</p>
+                    <ul class="d-flex">
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/amex-pay.svg"
+                            alt="amex"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/apple-pay.svg"
+                            alt="pay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/gpay.svg"
+                            alt="gpay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/master.svg"
+                            alt="paycard"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/phone.svg"
+                            alt="spay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/visa.svg"
+                            alt="visa"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="copyright">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="copyright-text">
+                    <p class="mb-0">
+                      All Copyrights Reserved &copy; 2023 - Ifte Samul Ohy.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="copyright-menu">
+                    <ul class="policy-menu">
+                      <li>
+                        <a href="privacy-policy.html">Privacy </a>
+                      </li>
+                      <li>
+                        <a href="faq.html">Faq </a>
+                      </li>
+                      <li>
+                        <a href="terms-condition.html">Terms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+  </body>
+</html>
