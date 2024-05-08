@@ -1,0 +1,100 @@
+.pricing-section {
+  background-color: #a8daee;
+  padding: 50px 0;
+  /* opacity: 0.1; */
+
+  .row {
+    padding-top: 50px;
+  }
+}
+
+.pricing-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+
+  margin: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #87ceeb;
+    color: white;
+  }
+}
+
+.pricing-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    font-size: 25px;
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  gap: 10px;
+  p {
+    margin: 0;
+  }
+  span {
+    font-size: 30px;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    /* object-fit: cover; */
+  }
+}
+
+.price-details {
+  padding: 10px;
+  font-size: 18px;
+  color: black;
+
+  &:hover {
+    color: white;
+  }
+
+  .price-details-item {
+    padding: 10px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+.not {
+  color: #b1b8c9;
+}
+
+.pricing-card:hover .not {
+  color: white; /* Apply the color only to elements with the "not" class */
+}
+
+.price-btn {
+  background-color: white;
+  color: #60a5fa;
+  border: 1px solid #60a5fa;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: white;
+    color: #60a5fa;
+    border: 1px solid #60a5fa;
+  }
+}

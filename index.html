@@ -31,12 +31,17 @@
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/carousel.css" />
+    <link rel="stylesheet" href="/assets/css/category.css" />
     <link rel="stylesheet" href="/assets/css/swiper.css" />
     <link rel="stylesheet" href="/assets/css/location.css" />
     <link rel="stylesheet" href="/assets/css/latest.css" />
     <link rel="stylesheet" href="/assets/css/card.css" />
     <link rel="stylesheet" href="/assets/css/posting.css" />
     <link rel="stylesheet" href="/assets/css/testimonial.css" />
+    <link rel="stylesheet" href="/assets/css/university.css" />
+    <link rel="stylesheet" href="/assets/css/pricing.css" />
+    <link rel="stylesheet" href="/assets/css/contact.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
   </head>
 
   <body class="">
@@ -118,7 +123,7 @@
     <!-- banner section -->
 
     <main>
-      <section class="banner-section">
+      <section class="banner-section aos" data-aos="fade-up">
         <div class="banner-section-img">
           <div class="container-lg">
             <div class="flex-col banner-text">
@@ -170,53 +175,55 @@
         </div>
       </section>
 
-      <section class="container-lg our-category">
-        <div class="category">
-          <div class="carousel__wrapper">
-            <h1 class="carousel__header">Our Category</h1>
-            <p class="carousel__subheader">
-              Lend anything from Our Top Category
-            </p>
+      <section class="container-lg our-category aos" data-aos="fade-up">
+        <!-- <div class="category"> -->
+        <div class="carousel__wrapper">
+          <h1 class="carousel__header">Our Category</h1>
+          <p class="carousel__subheader">Lend anything from Our Top Category</p>
 
-            <div class="carousel__nav">
-              <div class="carousel__nav__item" data-direction="prev">
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  role="img"
-                  width="24px"
-                  height="24px"
-                  fill="none"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    d="M15.525 18.966L8.558 12l6.967-6.967"
-                  ></path>
-                </svg>
-              </div>
-              <div class="carousel__nav__item" data-direction="next">
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  role="img"
-                  width="24px"
-                  height="24px"
-                  fill="none"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    d="M8.474 18.966L15.44 12 8.474 5.033"
-                  ></path>
-                </svg>
-              </div>
+          <div class="carousel__nav">
+            <div class="carousel__nav__item btn-cat-prev">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+                role="img"
+                width="24px"
+                height="24px"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  d="M15.525 18.966L8.558 12l6.967-6.967"
+                ></path>
+              </svg>
             </div>
+            <div class="carousel__nav__item btn-cat-next">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+                role="img"
+                width="24px"
+                height="24px"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  d="M8.474 18.966L15.44 12 8.474 5.033"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
 
-            <div class="carousel">
-              <div class="carousel__item">
+        <div class="swiper categorySwiper">
+          <div class="swiper-wrapper text-center">
+            <div class="swiper-slide">
+              <div class="category__card">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -230,7 +237,9 @@
                 </svg>
                 <span>Robotics</span>
               </div>
-              <div class="carousel__item">
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -244,7 +253,9 @@
                 </svg>
                 <span>Mobile</span>
               </div>
-              <div class="carousel__item">
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -258,7 +269,9 @@
                 </svg>
                 <span>Laptop</span>
               </div>
-              <div class="carousel__item">
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -272,7 +285,9 @@
                 </svg>
                 <span>Books</span>
               </div>
-              <div class="carousel__item">
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card item">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -286,7 +301,9 @@
                 </svg>
                 <span>PC</span>
               </div>
-              <div class="carousel__item">
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -300,7 +317,9 @@
                 </svg>
                 <span>Bikes</span>
               </div>
-              <div class="carousel__item">
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -319,7 +338,7 @@
         </div>
       </section>
 
-      <section class="featured-section">
+      <section class="featured-section aos" data-aos="fade-up">
         <div class="container-lg featured-grid">
           <div class="carousel__wrapper">
             <div class="carousel__header">Featured Items</div>
@@ -723,7 +742,7 @@
         </div>
       </section>
 
-      <section class="location-section">
+      <section class="location-section aos" data-aos="fade-up">
         <div class="container-lg location-grid">
           <div class="location-title">
             <h2>Popular Location</h2>
@@ -1067,7 +1086,7 @@
         <!-- </div> -->
       </section>
 
-      <section class="container-lg posting-section">
+      <section class="container-lg posting-section aos" data-aos="fade-up">
         <div class="row poster">
           <div class="col-md-12 col-lg-6">
             <div class="posting-title">
@@ -1094,7 +1113,7 @@
         </div>
       </section>
 
-      <section class="testimonial-section">
+      <section class="testimonial-section aos" data-aos="fade-up">
         <div class="container-lg">
           <div class="carousel__wrapper">
             <div class="carousel__header">Client Testimonials</div>
@@ -1207,11 +1226,856 @@
         </div>
       </section>
 
-      <section class="university-section container-lg">
-        <div class="border-2 text-center">
+      <section class="university-section container-lg aos" data-aos="fade-up">
+        <h1 class="text-center university-title">
           Over 100+ University being with us
+        </h1>
+
+        <div class="carousel__wrapper">
+          <div class="carousel__header">Featured Items</div>
+          <p class="carousel__subheader">
+            Checkout these latest coo Items from our members
+          </p>
+
+          <div class="carousel__nav">
+            <div class="carousel__nav__item btn-uni-prev">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+                role="img"
+                width="24px"
+                height="24px"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  d="M15.525 18.966L8.558 12l6.967-6.967"
+                ></path>
+              </svg>
+            </div>
+            <div class="carousel__nav__item btn-uni-next">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+                role="img"
+                width="24px"
+                height="24px"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  d="M8.474 18.966L15.44 12 8.474 5.033"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper universitySwiper">
+          <div class="swiper-wrapper text-center">
+            <div class="swiper-slide">
+              <div class="category__card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </section>
+
+      <section class="pricing-section">
+        <div class="container-lg aos" data-aos="fade-up">
+          <div class="university-title text-center">Our Pricing Plan</div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="pricing-card">
+                <div class="pricing-title">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12.0049 22.0027C6.48204 22.0027 2.00488 17.5256 2.00488 12.0027C2.00488 6.4799 6.48204 2.00275 12.0049 2.00275C17.5277 2.00275 22.0049 6.4799 22.0049 12.0027C22.0049 17.5256 17.5277 22.0027 12.0049 22.0027ZM12.0049 20.0027C16.4232 20.0027 20.0049 16.421 20.0049 12.0027C20.0049 7.58447 16.4232 4.00275 12.0049 4.00275C7.5866 4.00275 4.00488 7.58447 4.00488 12.0027C4.00488 16.421 7.5866 20.0027 12.0049 20.0027ZM9.00488 8.00275H15.0049L17.5049 11.5027L12.0041 17.0027L6.50488 11.5027L9.00488 8.00275ZM10.0349 10.0027L9.11488 11.2927L12.0041 14.1827L14.8949 11.2927L13.9749 10.0027H10.0349Z"
+                    ></path>
+                  </svg>
+
+                  <span>Free</span>
+                </div>
+
+                <p>
+                  Lorem ipsum doloit amet consectetdipisicing elit.Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit.
+                </p>
+
+                <div class="price">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12.0049 22.0027C6.48204 22.0027 2.00488 17.5256 2.00488 12.0027C2.00488 6.4799 6.48204 2.00275 12.0049 2.00275C17.5277 2.00275 22.0049 6.4799 22.0049 12.0027C22.0049 17.5256 17.5277 22.0027 12.0049 22.0027ZM12.0049 20.0027C16.4232 20.0027 20.0049 16.421 20.0049 12.0027C20.0049 7.58447 16.4232 4.00275 12.0049 4.00275C7.5866 4.00275 4.00488 7.58447 4.00488 12.0027C4.00488 16.421 7.5866 20.0027 12.0049 20.0027ZM8.50488 14.0027H14.0049C14.281 14.0027 14.5049 13.7789 14.5049 13.5027C14.5049 13.2266 14.281 13.0027 14.0049 13.0027H10.0049C8.62417 13.0027 7.50488 11.8835 7.50488 10.5027C7.50488 9.12203 8.62417 8.00275 10.0049 8.00275H11.0049V6.00275H13.0049V8.00275H15.5049V10.0027H10.0049C9.72874 10.0027 9.50488 10.2266 9.50488 10.5027C9.50488 10.7789 9.72874 11.0027 10.0049 11.0027H14.0049C15.3856 11.0027 16.5049 12.122 16.5049 13.5027C16.5049 14.8835 15.3856 16.0027 14.0049 16.0027H13.0049V18.0027H11.0049V16.0027H8.50488V14.0027Z"
+                    ></path>
+                  </svg>
+                  <span>0</span>
+                  <p>/ month</p>
+                </div>
+
+                <div class="price-details">
+                  <div class="price-details-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.602 13.7599L13.014 15.1719L21.4795 6.7063L22.8938 8.12051L13.014 18.0003L6.65 11.6363L8.06421 10.2221L10.189 12.3469L11.6025 13.7594L11.602 13.7599ZM11.6037 10.9322L16.5563 5.97949L17.9666 7.38977L13.014 12.3424L11.6037 10.9322ZM8.77698 16.5873L7.36396 18.0003L1 11.6363L2.41421 10.2221L3.82723 11.6352L3.82604 11.6363L8.77698 16.5873Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.602 13.7599L13.014 15.1719L21.4795 6.7063L22.8938 8.12051L13.014 18.0003L6.65 11.6363L8.06421 10.2221L10.189 12.3469L11.6025 13.7594L11.602 13.7599ZM11.6037 10.9322L16.5563 5.97949L17.9666 7.38977L13.014 12.3424L11.6037 10.9322ZM8.77698 16.5873L7.36396 18.0003L1 11.6363L2.41421 10.2221L3.82723 11.6352L3.82604 11.6363L8.77698 16.5873Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.602 13.7599L13.014 15.1719L21.4795 6.7063L22.8938 8.12051L13.014 18.0003L6.65 11.6363L8.06421 10.2221L10.189 12.3469L11.6025 13.7594L11.602 13.7599ZM11.6037 10.9322L16.5563 5.97949L17.9666 7.38977L13.014 12.3424L11.6037 10.9322ZM8.77698 16.5873L7.36396 18.0003L1 11.6363L2.41421 10.2221L3.82723 11.6352L3.82604 11.6363L8.77698 16.5873Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item not">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item not">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item not">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                </div>
+
+                <button class="price-btn" type="button">Get Started</button>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="pricing-card">
+                <div class="pricing-title">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12.0049 22.0027C6.48204 22.0027 2.00488 17.5256 2.00488 12.0027C2.00488 6.4799 6.48204 2.00275 12.0049 2.00275C17.5277 2.00275 22.0049 6.4799 22.0049 12.0027C22.0049 17.5256 17.5277 22.0027 12.0049 22.0027ZM12.0049 20.0027C16.4232 20.0027 20.0049 16.421 20.0049 12.0027C20.0049 7.58447 16.4232 4.00275 12.0049 4.00275C7.5866 4.00275 4.00488 7.58447 4.00488 12.0027C4.00488 16.421 7.5866 20.0027 12.0049 20.0027ZM9.00488 8.00275H15.0049L17.5049 11.5027L12.0041 17.0027L6.50488 11.5027L9.00488 8.00275ZM10.0349 10.0027L9.11488 11.2927L12.0041 14.1827L14.8949 11.2927L13.9749 10.0027H10.0349Z"
+                    ></path>
+                  </svg>
+
+                  <span>Free</span>
+                </div>
+
+                <p>
+                  Lorem ipsum doloit amet consectetdipisicing elit.Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit.
+                </p>
+
+                <div class="price">
+                  <span>৳ 0</span>
+                  <p>/ month</p>
+                </div>
+
+                <div class="price-details">
+                  <div class="price-details-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.602 13.7599L13.014 15.1719L21.4795 6.7063L22.8938 8.12051L13.014 18.0003L6.65 11.6363L8.06421 10.2221L10.189 12.3469L11.6025 13.7594L11.602 13.7599ZM11.6037 10.9322L16.5563 5.97949L17.9666 7.38977L13.014 12.3424L11.6037 10.9322ZM8.77698 16.5873L7.36396 18.0003L1 11.6363L2.41421 10.2221L3.82723 11.6352L3.82604 11.6363L8.77698 16.5873Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.602 13.7599L13.014 15.1719L21.4795 6.7063L22.8938 8.12051L13.014 18.0003L6.65 11.6363L8.06421 10.2221L10.189 12.3469L11.6025 13.7594L11.602 13.7599ZM11.6037 10.9322L16.5563 5.97949L17.9666 7.38977L13.014 12.3424L11.6037 10.9322ZM8.77698 16.5873L7.36396 18.0003L1 11.6363L2.41421 10.2221L3.82723 11.6352L3.82604 11.6363L8.77698 16.5873Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.602 13.7599L13.014 15.1719L21.4795 6.7063L22.8938 8.12051L13.014 18.0003L6.65 11.6363L8.06421 10.2221L10.189 12.3469L11.6025 13.7594L11.602 13.7599ZM11.6037 10.9322L16.5563 5.97949L17.9666 7.38977L13.014 12.3424L11.6037 10.9322ZM8.77698 16.5873L7.36396 18.0003L1 11.6363L2.41421 10.2221L3.82723 11.6352L3.82604 11.6363L8.77698 16.5873Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item not">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item not">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item not">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                </div>
+
+                <button class="price-btn" type="button">Get Started</button>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="pricing-card">
+                <div class="pricing-title">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12.0049 22.0027C6.48204 22.0027 2.00488 17.5256 2.00488 12.0027C2.00488 6.4799 6.48204 2.00275 12.0049 2.00275C17.5277 2.00275 22.0049 6.4799 22.0049 12.0027C22.0049 17.5256 17.5277 22.0027 12.0049 22.0027ZM12.0049 20.0027C16.4232 20.0027 20.0049 16.421 20.0049 12.0027C20.0049 7.58447 16.4232 4.00275 12.0049 4.00275C7.5866 4.00275 4.00488 7.58447 4.00488 12.0027C4.00488 16.421 7.5866 20.0027 12.0049 20.0027ZM9.00488 8.00275H15.0049L17.5049 11.5027L12.0041 17.0027L6.50488 11.5027L9.00488 8.00275ZM10.0349 10.0027L9.11488 11.2927L12.0041 14.1827L14.8949 11.2927L13.9749 10.0027H10.0349Z"
+                    ></path>
+                  </svg>
+
+                  <span>Free</span>
+                </div>
+
+                <p>
+                  Lorem ipsum doloit amet consectetdipisicing elit.Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit.
+                </p>
+
+                <div class="price">
+                  <span>৳ 0</span>
+                  <p>/ month</p>
+                </div>
+
+                <div class="price-details">
+                  <div class="price-details-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.602 13.7599L13.014 15.1719L21.4795 6.7063L22.8938 8.12051L13.014 18.0003L6.65 11.6363L8.06421 10.2221L10.189 12.3469L11.6025 13.7594L11.602 13.7599ZM11.6037 10.9322L16.5563 5.97949L17.9666 7.38977L13.014 12.3424L11.6037 10.9322ZM8.77698 16.5873L7.36396 18.0003L1 11.6363L2.41421 10.2221L3.82723 11.6352L3.82604 11.6363L8.77698 16.5873Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.602 13.7599L13.014 15.1719L21.4795 6.7063L22.8938 8.12051L13.014 18.0003L6.65 11.6363L8.06421 10.2221L10.189 12.3469L11.6025 13.7594L11.602 13.7599ZM11.6037 10.9322L16.5563 5.97949L17.9666 7.38977L13.014 12.3424L11.6037 10.9322ZM8.77698 16.5873L7.36396 18.0003L1 11.6363L2.41421 10.2221L3.82723 11.6352L3.82604 11.6363L8.77698 16.5873Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.602 13.7599L13.014 15.1719L21.4795 6.7063L22.8938 8.12051L13.014 18.0003L6.65 11.6363L8.06421 10.2221L10.189 12.3469L11.6025 13.7594L11.602 13.7599ZM11.6037 10.9322L16.5563 5.97949L17.9666 7.38977L13.014 12.3424L11.6037 10.9322ZM8.77698 16.5873L7.36396 18.0003L1 11.6363L2.41421 10.2221L3.82723 11.6352L3.82604 11.6363L8.77698 16.5873Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item not">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item not">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                  <div class="price-details-item not">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+                      ></path>
+                    </svg>
+
+                    <span>2 links</span>
+                  </div>
+                </div>
+
+                <button class="price-btn" type="button">Get Started</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <section class="contact__us_section">
+        <div class="row">
+          <div class="col call">
+            <div class="call-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="36"
+                height="36"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"
+                ></path>
+              </svg>
+
+              <div class="call-details">
+                <div>Call For Purchase</div>
+                <div>+123 456 789</div>
+              </div>
+            </div>
+            <div class="call-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="36"
+                height="36"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"
+                ></path>
+              </svg>
+
+              <div class="call-details">
+                <div>Call For Purchase</div>
+                <div>+123 456 789</div>
+              </div>
+            </div>
+          </div>
+          <div class="col subscribe">
+            <div class="grid_container">
+              <div class="grid_item">
+                <input
+                  type="text"
+                  class="enter_email"
+                  placeholder="Enter your email to subscribe"
+                />
+              </div>
+
+              <div class="grid_item sub-btn">
+                <button type="button" class="">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-top aos" data-aos="fade-up">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                  <div class="footer-logo">
+                    <a href="#"
+                      ><img src="assets/img/footerlogo.png" alt="logo"
+                    /></a>
+                  </div>
+                  <div class="footer-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt et magna aliqua.
+                    </p>
+                  </div>
+                  <div class="social-icon">
+                    <ul>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">About us</h2>
+                  <ul>
+                    <li>
+                      <a href="about.html">Our product</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="service-details.html">Our Services</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Get Started Us</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">Quick links</h2>
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)">Market Place</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Customers</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Carriers</a>
+                    </li>
+                    <li>
+                      <a href="blog-list.html">Our Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">Top Cities</h2>
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)">Manhatten</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Los Angeles</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Houston</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Chicago</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Alabama</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                  <h2 class="footer-title">Communication</h2>
+                  <div class="footer-contact-info">
+                    <div class="footer-address">
+                      <img src="assets/img/call-calling.svg" alt="Callus" />
+                      <p>
+                        <span>Call Us</span> <br />
+                        +017 123 456 78
+                      </p>
+                    </div>
+                    <div class="footer-address">
+                      <img src="assets/img/sms-tracking.svg" alt="Callus" />
+                      <p>
+                        <span>Send Message</span> <br />
+                        <a
+                          href="../cdn-cgi/l/email-protection.html"
+                          class="__cf_email__"
+                          data-cfemail="94f7fbfae0f5f7e0d4f1ecf5f9e4f8f1baf7fbf9"
+                          >[email&#160;protected]</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footercount">
+              <div class="row">
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,532</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,53264546</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,53264546</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>We Accept</p>
+                    <ul class="d-flex">
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/amex-pay.svg"
+                            alt="amex"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/apple-pay.svg"
+                            alt="pay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/gpay.svg"
+                            alt="gpay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/master.svg"
+                            alt="paycard"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/phone.svg"
+                            alt="spay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/visa.svg"
+                            alt="visa"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="copyright">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="copyright-text">
+                    <p class="mb-0">
+                      All Copyrights Reserved &copy; 2023 - Ifte Samul Ohy.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="copyright-menu">
+                    <ul class="policy-menu">
+                      <li>
+                        <a href="privacy-policy.html">Privacy </a>
+                      </li>
+                      <li>
+                        <a href="faq.html">Faq </a>
+                      </li>
+                      <li>
+                        <a href="terms-condition.html">Terms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <!-- scripts -->

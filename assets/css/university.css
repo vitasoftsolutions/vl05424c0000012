@@ -1,0 +1,27 @@
+.university-section {
+  padding: 50px 0px;
+}
+
+.university-title {
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  font-weight: 800;
+}
+
+.university__card {
+  padding: 20px 50px;
+  border-radius: 8px;
+  background-color: #eeeeee;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.7s ease;
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid #87ceeb !important;
+    color: #60a5fa;
+  }
+}

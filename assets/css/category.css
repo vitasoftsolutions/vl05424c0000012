@@ -1,0 +1,19 @@
+.category__card {
+  padding: 20px 50px;
+  border-radius: 8px;
+  background-color: #eeeeee;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.7s ease;
+}
+
+.category__card:hover {
+  cursor: pointer;
+  /* border: 1px solid #87ceeb; */
+  /* transform: scale(1.1); */
+  color: #60a5fa;
+}

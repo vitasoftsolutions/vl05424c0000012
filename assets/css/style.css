@@ -148,14 +148,11 @@ body {
   height: 20px;
 }
 
-.category {
-  padding: 30px;
-  padding-bottom: 80px;
-}
-
 .our-category {
   /* margin-top: 50px; */
   display: grid;
+  padding: 30px;
+  padding-bottom: 80px;
 }
 
 .featured-section {
