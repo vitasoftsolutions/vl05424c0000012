@@ -6,6 +6,10 @@
   .container-lg {
     padding: 5rem 0;
   }
+
+  h1 {
+    margin: 0;
+  }
 }
 
 .login-text {

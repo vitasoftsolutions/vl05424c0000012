@@ -91,7 +91,7 @@
 
 .description__map {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 
   .description_gallery {
     width: 60%;
@@ -143,11 +143,21 @@
   gap: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(216, 216, 216);
+
+  svg {
+    width: clamp(10px, 5vw, 30px) !important;
+  }
+
+  h2 {
+    font-size: clamp(10px, 5vw, 30px) !important;
+  }
 }
 
 .description__text {
   padding-top: 20px;
   color: #374b5c;
+
+  font-size: clamp(5px, 2.5vw, 15px) !important;
 }
 
 .google-maps {

@@ -3,10 +3,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #374b5c;
-
-  min-height: 200vh;
-
-  /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -308,6 +304,14 @@ body {
   border: 2px solid black;
 }
 
-.hwad {
-  height: 200vh;
+.bg-white {
+  background-color: white !important;
 }
+
+/* .py-5 {
+  padding: 0px 30px !important;
+} */
+
+/* .hwad {
+  height: 200vh;
+} */

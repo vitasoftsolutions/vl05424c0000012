@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/carousel.css" />
+    <link rel="stylesheet" href="/assets/css/category.css" />
+    <link rel="stylesheet" href="/assets/css/swiper.css" />
+    <link rel="stylesheet" href="/assets/css/location.css" />
+    <link rel="stylesheet" href="/assets/css/latest.css" />
+    <link rel="stylesheet" href="/assets/css/card.css" />
+    <link rel="stylesheet" href="/assets/css/posting.css" />
+    <link rel="stylesheet" href="/assets/css/testimonial.css" />
+    <link rel="stylesheet" href="/assets/css/university.css" />
+    <link rel="stylesheet" href="/assets/css/pricing.css" />
+    <link rel="stylesheet" href="/assets/css/contact.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/dashboard/style.css" />
+
+    <link rel="stylesheet" href="/assets/css/authentication/signin.css" />
+    <link rel="stylesheet" href="/assets/css/categories/categories.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-lg">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="28"
+              height="28"
+              fill="rgba(96,190,228,1)"
+            >
+              <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"></path>
+            </svg>
+          </button>
+
+          <a class="navbar-brand" href="/home">Lend Me V1.0 (PMG)</a>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="navbarNavDropdown"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav center-flex">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="categories.html">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item d-md-block d-lg-none margin-top">
+                  <a href="signup.html"
+                    ><button type="button" class="default-btn">
+                      Sign Up
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item d-md-block d-lg-none margin-top">
+                  <a href="signIn.html"
+                    ><button type="button" class="primary-btn">
+                      Sign In
+                    </button></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Buttons for Sign Up and Sign In -->
+          <div class="sign-btn">
+            <!-- Hide on large devices -->
+            <a href="signup.html"
+              ><button type="button" class="default-btn">Sign Up</button></a
+            >
+            <a href="signIn.html"
+              ><button type="button" class="primary-btn">Sign In</button></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="login-section aos" data-aos="fade-up">
+        <h1 class="text-center login-text">Dashboard</h1>
+
+        <div class="dashboard-section py-5">
+          <div class="container-md">
+            <div class="bg-white tabs py-2">
+              <a href="dashboard.html">
+                <div class="tab_item item_active">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M14 21C13.4477 21 13 20.5523 13 20V12C13 11.4477 13.4477 11 14 11H20C20.5523 11 21 11.4477 21 12V20C21 20.5523 20.5523 21 20 21H14ZM4 13C3.44772 13 3 12.5523 3 12V4C3 3.44772 3.44772 3 4 3H10C10.5523 3 11 3.44772 11 4V12C11 12.5523 10.5523 13 10 13H4ZM9 11V5H5V11H9ZM4 21C3.44772 21 3 20.5523 3 20V16C3 15.4477 3.44772 15 4 15H10C10.5523 15 11 15.4477 11 16V20C11 20.5523 10.5523 21 10 21H4ZM5 19H9V17H5V19ZM15 19H19V13H15V19ZM13 4C13 3.44772 13.4477 3 14 3H20C20.5523 3 21 3.44772 21 4V8C21 8.55228 20.5523 9 20 9H14C13.4477 9 13 8.55228 13 8V4ZM15 5V7H19V5H15Z"
+                    ></path>
+                  </svg>
+                  <p>Dashboard</p>
+                </div>
+              </a>
+              <a href="profile.html">
+                <div class="tab_item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"
+                    ></path>
+                  </svg>
+                  <p>Profile</p>
+                </div>
+              </a>
+              <a href="mylisting.html">
+                <div class="tab_item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"
+                    ></path>
+                  </svg>
+                  My Listing
+                </div>
+              </a>
+              <a href="mylendings.html">
+                <div class="tab_item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M7 3V1H9V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V9H20V5H17V7H15V5H9V7H7V5H4V19H10V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7ZM17 12C14.7909 12 13 13.7909 13 16C13 18.2091 14.7909 20 17 20C19.2091 20 21 18.2091 21 16C21 13.7909 19.2091 12 17 12ZM11 16C11 12.6863 13.6863 10 17 10C20.3137 10 23 12.6863 23 16C23 19.3137 20.3137 22 17 22C13.6863 22 11 19.3137 11 16ZM16 13V16.4142L18.2929 18.7071L19.7071 17.2929L18 15.5858V13H16Z"
+                    ></path>
+                  </svg>
+                  My Lendings
+                </div>
+              </a>
+            </div>
+
+            <div class="dashboard_card">
+              <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                  <div class="w-100 py-3 card_item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="56"
+                      height="56"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M19 22H5C3.34315 22 2 20.6569 2 19V3C2 2.44772 2.44772 2 3 2H17C17.5523 2 18 2.44772 18 3V15H22V19C22 20.6569 20.6569 22 19 22ZM18 17V19C18 19.5523 18.4477 20 19 20C19.5523 20 20 19.5523 20 19V17H18ZM16 20V4H4V19C4 19.5523 4.44772 20 5 20H16ZM6 7H14V9H6V7ZM6 11H14V13H6V11ZM6 15H11V17H6V15Z"
+                      ></path>
+                    </svg>
+
+                    <h4>Active product</h4>
+
+                    <h4 class="price">500</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                  <div class="w-100 py-3 card_item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="56"
+                      height="56"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M14.0049 2.00275C18.4232 2.00275 22.0049 5.58447 22.0049 10.0027C22.0049 13.2474 20.0733 16.0408 17.2973 17.296C16.0422 20.0717 13.249 22.0027 10.0049 22.0027C5.5866 22.0027 2.00488 18.421 2.00488 14.0027C2.00488 10.7586 3.9359 7.96548 6.71122 6.71006C7.96681 3.93431 10.7603 2.00275 14.0049 2.00275ZM11.0049 9.00275H9.00488V10.0027C7.62417 10.0027 6.50488 11.122 6.50488 12.5027C6.50488 13.8282 7.53642 14.9128 8.84051 14.9974L9.00488 15.0027H11.0049L11.0948 15.0108C11.328 15.0531 11.5049 15.2573 11.5049 15.5027C11.5049 15.7482 11.328 15.9524 11.0948 15.9947L11.0049 16.0027H7.00488V18.0027H9.00488V19.0027H11.0049V18.0027C12.3856 18.0027 13.5049 16.8835 13.5049 15.5027C13.5049 14.1773 12.4733 13.0927 11.1693 13.0081L11.0049 13.0027H9.00488L8.91501 12.9947C8.68176 12.9524 8.50488 12.7482 8.50488 12.5027C8.50488 12.2573 8.68176 12.0531 8.91501 12.0108L9.00488 12.0027H13.0049V10.0027H11.0049V9.00275ZM14.0049 4.00275C12.2214 4.00275 10.6196 4.78091 9.52064 6.01623C9.68133 6.00758 9.84254 6.00275 10.0049 6.00275C14.4232 6.00275 18.0049 9.58447 18.0049 14.0027C18.0049 14.1654 18 14.327 17.9905 14.4872C19.2265 13.3885 20.0049 11.7865 20.0049 10.0027C20.0049 6.68904 17.3186 4.00275 14.0049 4.00275Z"
+                      ></path>
+                    </svg>
+
+                    <h4>Total Balance</h4>
+
+                    <h4 class="price">500</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                  <div class="w-100 py-3 card_item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="56"
+                      height="56"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M2 20H22V22H2V20ZM4 12H6V19H4V12ZM9 12H11V19H9V12ZM13 12H15V19H13V12ZM18 12H20V19H18V12ZM2 7L12 2L22 7V11H2V7ZM4 8.23607V9H20V8.23607L12 4.23607L4 8.23607ZM12 8C11.4477 8 11 7.55228 11 7C11 6.44772 11.4477 6 12 6C12.5523 6 13 6.44772 13 7C13 7.55228 12.5523 8 12 8Z"
+                      ></path>
+                    </svg>
+
+                    <h4>Deposit</h4>
+
+                    <h4 class="price">500</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                  <div class="w-100 py-3 card_item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="56"
+                      height="56"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.3349 11.5023L11.5049 11.5028C13.9902 11.5028 16.0049 13.5175 16.0049 16.0028H9.00388L9.00488 17.0028L17.0049 17.002V16.0028C17.0049 14.9204 16.6867 13.8997 16.1188 13.002L19.0049 13.0028C20.9972 13.0028 22.7173 14.1681 23.521 15.8542C21.1562 18.9748 17.3268 21.0028 13.0049 21.0028C10.2436 21.0028 7.90445 20.4122 6.00456 19.378L6.00592 10.0738C7.25147 10.2522 8.39122 10.7585 9.3349 11.5023ZM5.00488 19.0028C5.00488 19.5551 4.55717 20.0028 4.00488 20.0028H2.00488C1.4526 20.0028 1.00488 19.5551 1.00488 19.0028V10.0028C1.00488 9.45052 1.4526 9.00281 2.00488 9.00281H4.00488C4.55717 9.00281 5.00488 9.45052 5.00488 10.0028V19.0028ZM18.0049 5.00281C19.6617 5.00281 21.0049 6.34595 21.0049 8.00281C21.0049 9.65966 19.6617 11.0028 18.0049 11.0028C16.348 11.0028 15.0049 9.65966 15.0049 8.00281C15.0049 6.34595 16.348 5.00281 18.0049 5.00281ZM11.0049 2.00281C12.6617 2.00281 14.0049 3.34595 14.0049 5.00281C14.0049 6.65966 12.6617 8.00281 11.0049 8.00281C9.34803 8.00281 8.00488 6.65966 8.00488 5.00281C8.00488 3.34595 9.34803 2.00281 11.0049 2.00281Z"
+                      ></path>
+                    </svg>
+
+                    <h4>Withdraw</h4>
+
+                    <h4 class="price">500</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard_chart row">
+              <div class="col-lg-6 col-md-12 chart">
+                <div class="bg-white chart_item">
+                  <div class="chart_header">
+                    <h4 class="w-100">Page Views</h4>
+                    <select
+                      title="This Week"
+                      class="form-control select category-select w-50"
+                    >
+                      <option value="">This Week</option>
+                      <option value="1">Last Week</option>
+                      <option value="2">This Month</option>
+                      <option value="3">Last Month</option>
+                    </select>
+                  </div>
+
+                  <hr class="w-100" />
+
+                  <div class="w-100">
+                    <div id="chart"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="bg-white chart_item">
+                  <div class="chart_header">
+                    <h4 class="w-100">Reviews</h4>
+                    <select
+                      title="This Week"
+                      class="form-control select category-select w-50"
+                    >
+                      <option value="">This Week</option>
+                      <option value="1">Last Week</option>
+                      <option value="2">This Month</option>
+                      <option value="3">Last Month</option>
+                    </select>
+                  </div>
+
+                  <hr class="w-100" />
+
+                  <div class="w-100 dashboard_reviews">
+                    <div class="testimonial__card">
+                      <div class="img-container d-flex gap-3">
+                        <img alt="" src="https://i.pravatar.cc" width="100%" />
+
+                        <div class="user-details">
+                          <h1>Esther Hills</h1>
+
+                          <div
+                            class="d-flex gap-2 align-items-center justify-content-between"
+                          >
+                            <div class="rating-star">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                                ></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                                ></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                                ></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                                ></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                                ></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                                ></path>
+                              </svg>
+                            </div>
+
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M17 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9V3H15V1H17V3ZM4 9V19H20V9H4ZM6 11H8V13H6V11ZM6 15H8V17H6V15ZM10 11H18V13H10V11ZM10 15H15V17H10V15Z"
+                                ></path>
+                              </svg>
+                              4 April, 2024
+                            </div>
+                          </div>
+                          <div class="details">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Commodi cupiditate hic saepe ipsam dignissimos
+                            culpa ducimus, iusto rerum qui earum laboriosam
+                            dolorem tempore dicta nemo repudiandae, dolore
+                            assumenda! Praesentium, assumenda!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial__card">
+                      <div class="img-container d-flex gap-3">
+                        <img alt="" src="https://i.pravatar.cc" width="100%" />
+
+                        <div class="user-details">
+                          <h1>Esther Hills</h1>
+
+                          <div
+                            class="d-flex gap-2 align-items-center justify-content-between"
+                          >
+                            <div class="rating-star">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                                ></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                                ></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                                ></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                                ></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                                ></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                                ></path>
+                              </svg>
+                            </div>
+
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                              >
+                                <path
+                                  d="M17 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9V3H15V1H17V3ZM4 9V19H20V9H4ZM6 11H8V13H6V11ZM6 15H8V17H6V15ZM10 11H18V13H10V11ZM10 15H15V17H10V15Z"
+                                ></path>
+                              </svg>
+                              4 April, 2024
+                            </div>
+                          </div>
+                          <div class="details">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Commodi cupiditate hic saepe ipsam dignissimos
+                            culpa ducimus, iusto rerum qui earum laboriosam
+                            dolorem tempore dicta nemo repudiandae, dolore
+                            assumenda! Praesentium, assumenda!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-top aos" data-aos="fade-up">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                  <div class="footer-logo">
+                    <a href="#"
+                      ><img src="assets/img/footerlogo.png" alt="logo"
+                    /></a>
+                  </div>
+                  <div class="footer-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt et magna aliqua.
+                    </p>
+                  </div>
+                  <div class="social-icon">
+                    <ul>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">About us</h2>
+                  <ul>
+                    <li>
+                      <a href="about.html">Our product</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="service-details.html">Our Services</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Get Started Us</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">Quick links</h2>
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)">Market Place</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Customers</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Carriers</a>
+                    </li>
+                    <li>
+                      <a href="blog-list.html">Our Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">Top Cities</h2>
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)">Manhatten</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Los Angeles</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Houston</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Chicago</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Alabama</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                  <h2 class="footer-title">Communication</h2>
+                  <div class="footer-contact-info">
+                    <div class="footer-address">
+                      <img src="assets/img/call-calling.svg" alt="Callus" />
+                      <p>
+                        <span>Call Us</span> <br />
+                        +017 123 456 78
+                      </p>
+                    </div>
+                    <div class="footer-address">
+                      <img src="assets/img/sms-tracking.svg" alt="Callus" />
+                      <p>
+                        <span>Send Message</span> <br />
+                        <a
+                          href="../cdn-cgi/l/email-protection.html"
+                          class="__cf_email__"
+                          data-cfemail="94f7fbfae0f5f7e0d4f1ecf5f9e4f8f1baf7fbf9"
+                          >[email&#160;protected]</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footercount">
+              <div class="row">
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,532</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,53264546</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,53264546</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>We Accept</p>
+                    <ul class="d-flex">
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/amex-pay.svg"
+                            alt="amex"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/apple-pay.svg"
+                            alt="pay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/gpay.svg"
+                            alt="gpay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/master.svg"
+                            alt="paycard"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/phone.svg"
+                            alt="spay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/visa.svg"
+                            alt="visa"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="copyright">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="copyright-text">
+                    <p class="mb-0">
+                      All Copyrights Reserved &copy; 2023 - Ifte Samul Ohy.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="copyright-menu">
+                    <ul class="policy-menu">
+                      <li>
+                        <a href="privacy-policy.html">Privacy </a>
+                      </li>
+                      <li>
+                        <a href="faq.html">Faq </a>
+                      </li>
+                      <li>
+                        <a href="terms-condition.html">Terms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/chart.js"></script>
+  </body>
+</html>
