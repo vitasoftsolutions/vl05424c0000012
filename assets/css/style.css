@@ -6,7 +6,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -207,6 +207,34 @@ body {
     width: 15px;
     height: 15px;
   }
+}
+
+.group_input {
+  border: 1px solid #666666;
+  border-radius: 5px;
+  padding: 0 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  svg {
+    color: #0056b3;
+  }
+
+  input {
+    border: none !important;
+
+    &:focus,
+    :active {
+      border: none !important;
+      outline: none !important;
+    }
+  }
+}
+
+textarea {
+  width: 100%;
 }
 
 /* !helper */

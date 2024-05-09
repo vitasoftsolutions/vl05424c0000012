@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/carousel.css" />
+    <link rel="stylesheet" href="/assets/css/category.css" />
+    <link rel="stylesheet" href="/assets/css/swiper.css" />
+    <link rel="stylesheet" href="/assets/css/location.css" />
+    <link rel="stylesheet" href="/assets/css/latest.css" />
+    <link rel="stylesheet" href="/assets/css/card.css" />
+    <link rel="stylesheet" href="/assets/css/posting.css" />
+    <link rel="stylesheet" href="/assets/css/testimonial.css" />
+    <link rel="stylesheet" href="/assets/css/university.css" />
+    <link rel="stylesheet" href="/assets/css/pricing.css" />
+    <link rel="stylesheet" href="/assets/css/contact.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/dashboard/style.css" />
+    <link rel="stylesheet" href="/assets/css/profile/style.css" />
+    <link rel="stylesheet" href="/assets/css/listing/style.css" />
+
+    <link rel="stylesheet" href="/assets/css/authentication/signin.css" />
+    <link rel="stylesheet" href="/assets/css/categories/categories.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-lg">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="28"
+              height="28"
+              fill="rgba(96,190,228,1)"
+            >
+              <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"></path>
+            </svg>
+          </button>
+
+          <a class="navbar-brand" href="/home">Lend Me V1.0 (PMG)</a>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="navbarNavDropdown"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav center-flex">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="categories.html">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item d-md-block d-lg-none margin-top">
+                  <a href="signup.html"
+                    ><button type="button" class="default-btn">
+                      Sign Up
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item d-md-block d-lg-none margin-top">
+                  <a href="signIn.html"
+                    ><button type="button" class="primary-btn">
+                      Sign In
+                    </button></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Buttons for Sign Up and Sign In -->
+          <div class="sign-btn">
+            <!-- Hide on large devices -->
+            <a href="signup.html"
+              ><button type="button" class="default-btn">Sign Up</button></a
+            >
+            <a href="signIn.html"
+              ><button type="button" class="primary-btn">Sign In</button></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="login-section aos" data-aos="fade-up">
+        <h1 class="text-center login-text">Dashboard</h1>
+
+        <div class="dashboard-section py-5">
+          <div class="container-md">
+            <div class="bg-white tabs py-2">
+              <a href="dashboard.html">
+                <div class="tab_item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M14 21C13.4477 21 13 20.5523 13 20V12C13 11.4477 13.4477 11 14 11H20C20.5523 11 21 11.4477 21 12V20C21 20.5523 20.5523 21 20 21H14ZM4 13C3.44772 13 3 12.5523 3 12V4C3 3.44772 3.44772 3 4 3H10C10.5523 3 11 3.44772 11 4V12C11 12.5523 10.5523 13 10 13H4ZM9 11V5H5V11H9ZM4 21C3.44772 21 3 20.5523 3 20V16C3 15.4477 3.44772 15 4 15H10C10.5523 15 11 15.4477 11 16V20C11 20.5523 10.5523 21 10 21H4ZM5 19H9V17H5V19ZM15 19H19V13H15V19ZM13 4C13 3.44772 13.4477 3 14 3H20C20.5523 3 21 3.44772 21 4V8C21 8.55228 20.5523 9 20 9H14C13.4477 9 13 8.55228 13 8V4ZM15 5V7H19V5H15Z"
+                    ></path>
+                  </svg>
+                  <p>Dashboard</p>
+                </div>
+              </a>
+              <a href="profile.html">
+                <div class="tab_item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"
+                    ></path>
+                  </svg>
+                  <p>Profile</p>
+                </div>
+              </a>
+              <a href="mylisting.html">
+                <div class="tab_item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"
+                    ></path>
+                  </svg>
+                  My Listing
+                </div>
+              </a>
+              <a href="mylendings.html">
+                <div class="tab_item item_active">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M7 3V1H9V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V9H20V5H17V7H15V5H9V7H7V5H4V19H10V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7ZM17 12C14.7909 12 13 13.7909 13 16C13 18.2091 14.7909 20 17 20C19.2091 20 21 18.2091 21 16C21 13.7909 19.2091 12 17 12ZM11 16C11 12.6863 13.6863 10 17 10C20.3137 10 23 12.6863 23 16C23 19.3137 20.3137 22 17 22C13.6863 22 11 19.3137 11 16ZM16 13V16.4142L18.2929 18.7071L19.7071 17.2929L18 15.5858V13H16Z"
+                    ></path>
+                  </svg>
+                  My Lendings
+                </div>
+              </a>
+            </div>
+
+            <div class="dashboard_chart row">
+              <div class="col chart">
+                <div class="bg-white chart_item">
+                  <div class="chart_header">
+                    <h4 class="w-100">My Listing</h4>
+                  </div>
+
+                  <hr class="w-100" />
+
+                  <div class="w-100 container-md">
+                    <div class="listing">
+                      <table class="custom_table">
+                        <thead>
+                          <tr>
+                            <th>Image</th>
+                            <th>Details</th>
+                            <th>Status</th>
+                            <th>Time Remaining</th>
+                          </tr>
+                        </thead>
+                        <tbody class="">
+                          <tr>
+                            <td>
+                              <img src="https://i.pravatar.cc" alt="Image 1" />
+                            </td>
+                            <td>Details 1</td>
+                            <td>Status 1</td>
+                            <td>Time 1</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="https://i.pravatar.cc" alt="Image 2" />
+                            </td>
+                            <td>Details 2</td>
+                            <td>Status 2</td>
+                            <td>Time 2</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="https://i.pravatar.cc" alt="Image 3" />
+                            </td>
+                            <td>Details 3</td>
+                            <td>Status 3</td>
+                            <td>Time 3</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="https://i.pravatar.cc" alt="Image 4" />
+                            </td>
+                            <td>Details 4</td>
+                            <td>Status 4</td>
+                            <td>Time 4</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="https://i.pravatar.cc" alt="Image 5" />
+                            </td>
+                            <td>Details 5</td>
+                            <td>Status 5</td>
+                            <td>Time 5</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-top aos" data-aos="fade-up">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                  <div class="footer-logo">
+                    <a href="#"
+                      ><img src="assets/img/footerlogo.png" alt="logo"
+                    /></a>
+                  </div>
+                  <div class="footer-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt et magna aliqua.
+                    </p>
+                  </div>
+                  <div class="social-icon">
+                    <ul>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">About us</h2>
+                  <ul>
+                    <li>
+                      <a href="about.html">Our product</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="service-details.html">Our Services</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Get Started Us</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">Quick links</h2>
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)">Market Place</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Customers</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Carriers</a>
+                    </li>
+                    <li>
+                      <a href="blog-list.html">Our Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">Top Cities</h2>
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)">Manhatten</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Los Angeles</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Houston</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Chicago</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Alabama</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                  <h2 class="footer-title">Communication</h2>
+                  <div class="footer-contact-info">
+                    <div class="footer-address">
+                      <img src="assets/img/call-calling.svg" alt="Callus" />
+                      <p>
+                        <span>Call Us</span> <br />
+                        +017 123 456 78
+                      </p>
+                    </div>
+                    <div class="footer-address">
+                      <img src="assets/img/sms-tracking.svg" alt="Callus" />
+                      <p>
+                        <span>Send Message</span> <br />
+                        <a
+                          href="../cdn-cgi/l/email-protection.html"
+                          class="__cf_email__"
+                          data-cfemail="94f7fbfae0f5f7e0d4f1ecf5f9e4f8f1baf7fbf9"
+                          >[email&#160;protected]</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footercount">
+              <div class="row">
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,532</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,53264546</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,53264546</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>We Accept</p>
+                    <ul class="d-flex">
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/amex-pay.svg"
+                            alt="amex"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/apple-pay.svg"
+                            alt="pay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/gpay.svg"
+                            alt="gpay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/master.svg"
+                            alt="paycard"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/phone.svg"
+                            alt="spay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/visa.svg"
+                            alt="visa"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="copyright">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="copyright-text">
+                    <p class="mb-0">
+                      All Copyrights Reserved &copy; 2024 - Saleh Shakib.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="copyright-menu">
+                    <ul class="policy-menu">
+                      <li>
+                        <a href="privacy-policy.html">Privacy </a>
+                      </li>
+                      <li>
+                        <a href="faq.html">Faq </a>
+                      </li>
+                      <li>
+                        <a href="terms-condition.html">Terms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./assets/js/profile.js"></script>
+  </body>
+</html>

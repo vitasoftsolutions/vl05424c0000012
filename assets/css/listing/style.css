@@ -1,0 +1,37 @@
+/* Custom styles for the table */
+.custom_table {
+  width: 100%;
+}
+
+.custom_table thead {
+  background-color: #007bff;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.custom_table tbody {
+  /* height: 50vh !important; */
+  overflow-y: auto;
+}
+
+.custom_table th,
+.custom_table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Container styles */
+.listing {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+/* Image styles */
+.listing img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}

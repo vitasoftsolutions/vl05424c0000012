@@ -1,14 +1,16 @@
 .profile-image {
   display: flex;
+  flex-direction: column;
   justify-content: start;
   align-items: center;
   gap: 10px;
 
   .settings-upload-img {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 20px;
   }
   img {
     object-fit: cover;
@@ -25,6 +27,12 @@
       color: white;
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  /* .profile-image {
+    flex-direction: column;
+  } */
 }
 
 .settings-upload-btn .hide-input {
@@ -65,4 +73,10 @@
 .profile-photo span {
   font-size: 16px;
   color: #666666;
+}
+
+.update-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
