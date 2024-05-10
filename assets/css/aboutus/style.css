@@ -1,0 +1,22 @@
+.about_us_img {
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 0 !important;
+
+  height: 40vh;
+
+  position: relative;
+}
+
+.about_lendme {
+  width: 40%;
+
+  position: absolute;
+  top: 47%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+
+  h1 {
+    margin-bottom: 10px;
+  }
+}
