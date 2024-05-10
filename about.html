@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/carousel.css" />
+    <link rel="stylesheet" href="assets/css/category.css" />
+    <link rel="stylesheet" href="assets/css/swiper.css" />
+    <link rel="stylesheet" href="assets/css/location.css" />
+    <link rel="stylesheet" href="assets/css/latest.css" />
+    <link rel="stylesheet" href="assets/css/card.css" />
+    <link rel="stylesheet" href="assets/css/posting.css" />
+    <link rel="stylesheet" href="assets/css/testimonial.css" />
+    <link rel="stylesheet" href="assets/css/university.css" />
+    <link rel="stylesheet" href="assets/css/pricing.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/contact/style.css" />
+
+    <link rel="stylesheet" href="assets/css/dashboard/style.css" />
+    <link rel="stylesheet" href="assets/css/profile/style.css" />
+    <link rel="stylesheet" href="assets/css/addListing/style.css" />
+
+    <link rel="stylesheet" href="assets/css/authentication/signin.css" />
+    <link rel="stylesheet" href="assets/css/categories/categories.css" />
+    <link rel="stylesheet" href="assets/css/aboutus/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-lg">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="28"
+              height="28"
+              fill="rgba(96,190,228,1)"
+            >
+              <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"></path>
+            </svg>
+          </button>
+
+          <a class="navbar-brand" href="/home">Lend Me V1.0 (PMG)</a>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="navbarNavDropdown"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav center-flex">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item d-md-block d-lg-none">
+                  <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item d-md-block d-lg-none">
+                  <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item d-md-block d-lg-none">
+                  <a class="nav-link" href="mylisting.html">Listing</a>
+                </li>
+                <li class="nav-item d-md-block d-lg-none">
+                  <a class="nav-link" href="mylendings.html">My Lendings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="categories.html">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+
+                <li class="nav-item d-md-block d-lg-none margin-top">
+                  <a href="signup.html"
+                    ><button type="button" class="default-btn">
+                      Sign Up
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item d-md-block d-lg-none margin-top">
+                  <a href="signIn.html"
+                    ><button type="button" class="primary-btn">
+                      Sign In
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item d-md-block d-lg-none margin-top">
+                  <a href="addlisting.html"
+                    ><button type="button" class="primary-btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"
+                        ></path></svg
+                      >Add Item
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item d-md-block d-lg-none">
+                  <a class="nav-link" href="mylendings.html">Log Out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Buttons for Sign Up and Sign In -->
+          <div class="sign-btn">
+            <!-- Hide on large devices -->
+            <a href="signup.html"
+              ><button type="button" class="default-btn">Sign Up</button></a
+            >
+            <a href="signIn.html"
+              ><button type="button" class="primary-btn">Sign In</button></a
+            >
+
+            <a href="addlisting.html"
+              ><button type="button" class="primary-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"
+                  ></path></svg
+                >Add Item
+              </button></a
+            >
+
+            <div class="dropdown text-end">
+              <a
+                href="#"
+                class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://github.com/mdo.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+              </a>
+              <ul class="dropdown-menu text-small text-center">
+                <li>
+                  <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="profile.html">Profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mylisting.html">Listing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mylendings.html"
+                    >My Lendings</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="login-section">
+        <h1 class="text-center login-text">About Us</h1>
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-6 about_us_img">
+              <img src="https://i.pravatar.cc" alt="" />
+            </div>
+          </div>
+
+          <div class="bg-white p-5 rounded-5 about_lendme">
+            <h1>About Lendmee</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              temporibus cupiditate consequatur est rem illo vel fuga, rerum
+              minus aut quidem nam! Autem nemo recusandae non aliquam delectus
+              nesciunt quaerat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+              accusamus soluta officiis quas provident illum, quisquam beatae ad
+              eius corrupti nemo aspernatur, reiciendis officia iusto
+              asperiores, adipisci facere rerum animi.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-lg posting-section aos" data-aos="fade-up">
+        <div class="row poster">
+          <div class="col-md-12 col-lg-6">
+            <div class="posting-title">
+              <h1>Earn Cash by Lending</h1>
+              <h1>or Find Anything you desire</h1>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humo or randomised words which don't look even
+                slightlys
+              </p>
+
+              <div class="d-flex gap-3">
+                <button class="primary-btn" type="button">
+                  Post Your Item
+                </button>
+                <button class="default-btn" type="button">Browse Items</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 computer">
+            <img src="./assets/img/computer.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section aos" data-aos="fade-up">
+        <div class="container-lg">
+          <div class="carousel__wrapper">
+            <div class="carousel__header">Client Testimonials</div>
+            <!-- <div class="carousel__header__2">Testimonial</div> -->
+
+            <div class="carousel__nav">
+              <div class="carousel__nav__item btn-prev">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  width="24px"
+                  height="24px"
+                  fill="none"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    d="M15.525 18.966L8.558 12l6.967-6.967"
+                  ></path>
+                </svg>
+              </div>
+              <div class="carousel__nav__item btn-next">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  width="24px"
+                  height="24px"
+                  fill="none"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    d="M8.474 18.966L15.44 12 8.474 5.033"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial__card">
+                  <div class="img-container d-flex gap-3">
+                    <img alt="" src="https://i.pravatar.cc" width="100%" />
+
+                    <div class="user-details">
+                      <h1>Esther Hills</h1>
+
+                      <p>Lead Internet Technician</p>
+                    </div>
+                  </div>
+
+                  <div class="details">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Commodi cupiditate hic saepe ipsam dignissimos culpa
+                    ducimus, iusto rerum qui earum laboriosam dolorem tempore
+                    dicta nemo repudiandae, dolore assumenda! Praesentium,
+                    assumenda!
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial__card">
+                  <div class="img-container d-flex gap-3">
+                    <img alt="" src="https://i.pravatar.cc" width="100%" />
+
+                    <div class="user-details">
+                      <h1>Esther Hills</h1>
+
+                      <p>Lead Internet Technician</p>
+                    </div>
+                  </div>
+
+                  <div class="details">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Commodi cupiditate hic saepe ipsam dignissimos culpa
+                    ducimus, iusto rerum qui earum laboriosam dolorem tempore
+                    dicta nemo repudiandae, dolore assumenda! Praesentium,
+                    assumenda!
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial__card">
+                  <div class="img-container d-flex gap-3">
+                    <img alt="" src="https://i.pravatar.cc" width="100%" />
+
+                    <div class="user-details">
+                      <h1>Esther Hills</h1>
+
+                      <p>Lead Internet Technician</p>
+                    </div>
+                  </div>
+
+                  <div class="details">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Commodi cupiditate hic saepe ipsam dignissimos culpa
+                    ducimus, iusto rerum qui earum laboriosam dolorem tempore
+                    dicta nemo repudiandae, dolore assumenda! Praesentium,
+                    assumenda!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="university-section container-lg aos" data-aos="fade-up">
+        <h1 class="text-center university-title">
+          Over 100+ University being with us
+        </h1>
+
+        <div class="carousel__wrapper">
+          <!-- <div class="carousel__header">Featured Items</div>
+          <p class="carousel__subheader">
+            Checkout these latest coo Items from our members
+          </p> -->
+
+          <div class="carousel__nav">
+            <div class="carousel__nav__item btn-uni-prev">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+                role="img"
+                width="24px"
+                height="24px"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  d="M15.525 18.966L8.558 12l6.967-6.967"
+                ></path>
+              </svg>
+            </div>
+            <div class="carousel__nav__item btn-uni-next">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+                role="img"
+                width="24px"
+                height="24px"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  d="M8.474 18.966L15.44 12 8.474 5.033"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper universitySwiper">
+          <div class="swiper-wrapper text-center">
+            <div class="swiper-slide">
+              <div class="category__card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="category__card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z"
+                  ></path>
+                </svg>
+                <span>Robotics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-top aos" data-aos="fade-up">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                  <div class="footer-logo">
+                    <a href="#"
+                      ><img src="assets/img/footerlogo.png" alt="logo"
+                    /></a>
+                  </div>
+                  <div class="footer-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt et magna aliqua.
+                    </p>
+                  </div>
+                  <div class="social-icon">
+                    <ul>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">About us</h2>
+                  <ul>
+                    <li>
+                      <a href="about.html">Our product</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="service-details.html">Our Services</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Get Started Us</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">Quick links</h2>
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)">Market Place</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Customers</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Carriers</a>
+                    </li>
+                    <li>
+                      <a href="blog-list.html">Our Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer-menu">
+                  <h2 class="footer-title">Top Cities</h2>
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)">Manhatten</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Los Angeles</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Houston</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Chicago</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Alabama</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                  <h2 class="footer-title">Communication</h2>
+                  <div class="footer-contact-info">
+                    <div class="footer-address">
+                      <img src="assets/img/call-calling.svg" alt="Callus" />
+                      <p>
+                        <span>Call Us</span> <br />
+                        +017 123 456 78
+                      </p>
+                    </div>
+                    <div class="footer-address">
+                      <img src="assets/img/sms-tracking.svg" alt="Callus" />
+                      <p>
+                        <span>Send Message</span> <br />
+                        <a
+                          href="../cdn-cgi/l/email-protection.html"
+                          class="__cf_email__"
+                          data-cfemail="94f7fbfae0f5f7e0d4f1ecf5f9e4f8f1baf7fbf9"
+                          >[email&#160;protected]</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footercount">
+              <div class="row">
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,532</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,53264546</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>Our Unique Visitor</p>
+                    <p class="visitors-value">25,329,53264546</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="vistors-details">
+                    <p>We Accept</p>
+                    <ul class="d-flex">
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/amex-pay.svg"
+                            alt="amex"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/apple-pay.svg"
+                            alt="pay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/gpay.svg"
+                            alt="gpay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/master.svg"
+                            alt="paycard"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/phone.svg"
+                            alt="spay"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="assets/img/visa.svg"
+                            alt="visa"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="copyright">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="copyright-text">
+                    <p class="mb-0">
+                      All Copyrights Reserved &copy; 2024 - Saleh Shakib
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="copyright-menu">
+                    <ul class="policy-menu">
+                      <li>
+                        <a href="privacy-policy.html">Privacy </a>
+                      </li>
+                      <li>
+                        <a href="faq.html">Faq </a>
+                      </li>
+                      <li>
+                        <a href="terms-condition.html">Terms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/carousel.js"></script>
+  </body>
+</html>

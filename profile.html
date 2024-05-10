@@ -63,7 +63,7 @@
             </svg>
           </button>
 
-          <a class="navbar-brand" href="index.html">Lend Me V1.0 (PMG)</a>
+          <a class="navbar-brand" href="/home">Lend Me V1.0 (PMG)</a>
 
           <div
             class="offcanvas offcanvas-start"
@@ -82,12 +82,22 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav center-flex">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"
-                    >Home</a
-                  >
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item d-md-block d-lg-none">
+                  <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item d-md-block d-lg-none">
+                  <a class="nav-link active" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item d-md-block d-lg-none">
+                  <a class="nav-link" href="mylisting.html">Listing</a>
+                </li>
+                <li class="nav-item d-md-block d-lg-none">
+                  <a class="nav-link" href="mylendings.html">My Lendings</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="categories.html">Category</a>
+                  <a class="nav-link" href="categories.html">Category</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.html">About Us</a>
@@ -95,6 +105,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
+
                 <li class="nav-item d-md-block d-lg-none margin-top">
                   <a href="signup.html"
                     ><button type="button" class="default-btn">
@@ -109,6 +120,26 @@
                     </button></a
                   >
                 </li>
+                <li class="nav-item d-md-block d-lg-none margin-top">
+                  <a href="addlisting.html"
+                    ><button type="button" class="primary-btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"
+                        ></path></svg
+                      >Add Item
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item d-md-block d-lg-none">
+                  <a class="nav-link" href="mylendings.html">Log Out</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -122,6 +153,7 @@
             <a href="signIn.html"
               ><button type="button" class="primary-btn">Sign In</button></a
             >
+
             <a href="addlisting.html"
               ><button type="button" class="primary-btn">
                 <svg
@@ -137,6 +169,43 @@
                 >Add Item
               </button></a
             >
+
+            <div class="dropdown text-end">
+              <a
+                href="#"
+                class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://github.com/mdo.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+              </a>
+              <ul class="dropdown-menu text-small text-center">
+                <li>
+                  <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                  <a class="dropdown-item drop_active" href="profile.html"
+                    >Profile</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mylisting.html">Listing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mylendings.html"
+                    >My Lendings</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>

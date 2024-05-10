@@ -35,9 +35,12 @@
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/contact/style.css" />
 
+    <link rel="stylesheet" href="assets/css/dashboard/style.css" />
+    <link rel="stylesheet" href="assets/css/profile/style.css" />
+    <link rel="stylesheet" href="assets/css/addListing/style.css" />
+
     <link rel="stylesheet" href="assets/css/authentication/signin.css" />
     <link rel="stylesheet" href="assets/css/categories/categories.css" />
-    <link rel="stylesheet" href="assets/css/singleCategory/style.css" />
   </head>
   <body>
     <header class="header">
@@ -103,7 +106,7 @@
                   <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
+                  <a class="nav-link active" href="contact.html">Contact Us</a>
                 </li>
 
                 <li class="nav-item d-md-block d-lg-none margin-top">
@@ -212,7 +215,102 @@
     <main>
       <section class="login-section">
         <h1 class="text-center login-text">About Us</h1>
-        <div class="container py-5 border-2 red"></div>
+        <div class="container py-5">
+          <div class="row contact_us">
+            <div class="col-lg-6 col-md-12">
+              <div class="chart_item">
+                <img src="https://i.pravatar.cc" alt="" width="100%" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="contact_map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.8862835683544!2d-73.98256668525309!3d41.93829486962529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd0ee3286615b7%3A0x42bfa96cc2ce4381!2s132%20Kingston%20St%2C%20Kingston%2C%20NY%2012401%2C%20USA!5e0!3m2!1sen!2sin!4v1670922579281!5m2!1sen!2sin"
+                  allowfullscreen=""
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="time text-center p-5 rounded-5">
+            <h3>Hours</h3>
+            <p>Tuesday - Saturday : 9am - 5pm</p>
+            <p>Monday: 10:30am - 3pm Closed on Sunday</p>
+
+            <h3>Contact Us</h3>
+            <p>132, My Street, Kingston, New York 12401</p>
+            <p>Tel : +088 01562 1452</p>
+            <p>Email : [email protected]</p>
+          </div>
+
+          <div class="bg-white contact_form">
+            <div class="text-center">
+              <h2>Contact Us</h2>
+              <p>We are here to help you</p>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <img
+                  src="https://i.pravatar.cc"
+                  alt=""
+                  width="100%"
+                  height="min-content"
+                />
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <form action="" id="user-form">
+                  <div class="form-group">
+                    <div class="group_input_with_no_icon">
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Name"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="group_input_with_no_icon">
+                      <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        placeholder="Phone"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="group_input_with_no_icon">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <textarea
+                      rows="4"
+                      name="note"
+                      id="note"
+                      placeholder="Write a message"
+                    ></textarea>
+                  </div>
+
+                  <div class="form-group w-100 update-btn">
+                    <button type="submit" class="primary-btn w-25">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- footer -->

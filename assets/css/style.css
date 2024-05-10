@@ -43,6 +43,11 @@ body {
   font-weight: bold !important;
 }
 
+.drop_active {
+  background-color: #007bff !important;
+  color: white;
+}
+
 .navbar-toggler {
   border: none;
   outline: none;
