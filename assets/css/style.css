@@ -68,7 +68,7 @@ body {
   height: 500px;
   /* object-fit: cover; */
 
-  background-image: url("https://gemmart.arrowtheme.com/pub/media/wysiwyg/slider/home1-slide.jpg");
+  background-image: url("https://gemmart.arrowtheme.com/pub/media/wysiwyg/sliderindex.html1-slide.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -133,7 +133,6 @@ body {
 .category-select {
   padding: 8px 25px;
   border-radius: 10px;
-  /* border-color: #374b5c; */
   color: #374b5c;
   font-size: clamp(0.7rem, 1vw, 1.5rem) !important;
 

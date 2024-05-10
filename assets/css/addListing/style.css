@@ -1,0 +1,56 @@
+.group_input {
+  padding: 0;
+}
+
+.group_input_with_icon {
+  border: 1px solid #666666;
+  border-radius: 5px;
+  padding: 0 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  svg {
+    color: #0056b3;
+  }
+
+  input {
+    border: none !important;
+
+    &:focus,
+    :active {
+      border: none !important;
+      outline: none !important;
+    }
+  }
+}
+
+.form-control {
+  border: 1px solid #666666;
+}
+
+.select {
+  padding: 10px;
+
+  &:focus {
+    outline: none !important;
+    border: none !important;
+  }
+}
+
+.form-group {
+  select:focus {
+    outline: none;
+  }
+}
+
+.add_listing_submit_btn {
+  display: flex;
+  justify-content: end;
+  margin-top: 15px !important;
+
+  .primary-btn {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+}
