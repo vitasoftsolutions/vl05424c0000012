@@ -76,3 +76,9 @@
   /* Two columns with equal width */
   gap: 10px; /* Gap between grid items */
 }
+
+.form-group {
+  textarea {
+    border: 1px solid #ccc;
+  }
+}
