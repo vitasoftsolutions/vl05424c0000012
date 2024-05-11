@@ -20,3 +20,46 @@
     margin-bottom: 10px;
   }
 }
+
+.how_it_work {
+  padding-bottom: 50px;
+
+  h1 {
+    font-weight: 600;
+    span {
+      color: #0056b3;
+    }
+  }
+}
+
+.instrutction_item {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+
+  padding: 30px;
+
+  h5 {
+    font-weight: 800;
+    font-size: 50px;
+
+    &:after {
+      content: "";
+      border-top: 4px solid #374b5c;
+      display: inline-block;
+      width: calc(100% - 110px);
+      position: absolute;
+      top: 35px;
+      left: 78px;
+    }
+  }
+  h3 {
+    font-weight: 600;
+  }
+
+  &:hover {
+    h5,
+    h3 {
+      color: #0056b3;
+    }
+  }
+}
