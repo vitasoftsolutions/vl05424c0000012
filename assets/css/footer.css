@@ -288,6 +288,10 @@
 .footer-social .social-icon {
   margin: 0;
   text-align: right;
+
+  svg {
+    color: red;
+  }
 }
 .footer-two .social-icon ul li a {
   height: 40px;
