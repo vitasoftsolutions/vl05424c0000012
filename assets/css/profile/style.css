@@ -22,7 +22,7 @@
     border-radius: 50%;
 
     &:hover {
-      background-color: #007bff;
+      background-color: #1873de;
       cursor: pointer;
       color: white;
     }
@@ -50,8 +50,8 @@
   border-radius: 8px;
 
   color: #fff;
-  background: #007bff;
-  border: 1px solid #007bff;
+  background: #1873de;
+  border: 1px solid #1873de;
   &:hover {
     background: #0056b3;
     color: white;

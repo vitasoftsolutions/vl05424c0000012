@@ -28,7 +28,7 @@
     }
 
     &:not(.item_active):hover {
-      background-color: #007bff;
+      background-color: #1873de;
       color: white;
       padding: 10px;
       border-radius: 8px;
@@ -36,7 +36,7 @@
   }
 
   .item_active {
-    background-color: #007bff;
+    background-color: #1873de;
     color: white;
     padding: 10px;
     border-radius: 8px;
@@ -101,7 +101,7 @@
     }
 
     .price {
-      color: #007bff;
+      color: #1873de;
       font-weight: 600;
     }
   }

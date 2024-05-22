@@ -15,5 +15,6 @@
   cursor: pointer;
   /* border: 1px solid #87ceeb; */
   /* transform: scale(1.1); */
-  color: #60a5fa;
+  color: white;
+  background-color: #1873de;
 }

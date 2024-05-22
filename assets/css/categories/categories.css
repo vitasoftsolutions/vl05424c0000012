@@ -10,7 +10,7 @@
     transition: all 0.4s ease;
 
     &:hover {
-      background-color: #007bff;
+      background-color: #1873de;
       color: white;
     }
   }

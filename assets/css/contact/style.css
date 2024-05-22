@@ -18,13 +18,16 @@
   }
 }
 
-.contact_us {
+.relative_class {
   position: relative;
+}
+.contact_us {
+  /* position: relative; */
 }
 
 .time {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 

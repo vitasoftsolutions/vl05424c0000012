@@ -54,7 +54,7 @@
 }
 
 .free-time {
-  color: #60a5fa !important;
+  color: #3994ff !important;
   font-weight: 600 !important;
   font-size: 16px !important;
 }
@@ -102,7 +102,7 @@
 
 /* .details h1:hover {
   cursor: pointer;
-  color: #60a5fa;
+  color: #3994FF;
 } */
 
 .card .img-container img {
@@ -118,9 +118,9 @@
 }
 
 .card .type {
-  background-color: white;
-  border: 1px solid #87ceeb;
-  color: #87ceeb;
+  background-color: #b0d4ff;
+  border: 1px solid #b0d4ff;
+  color: #3994ff;
 }
 .card ul {
   list-style: none;
@@ -145,7 +145,7 @@
 }
 .card ul li {
   padding: 4px 16px;
-  background-color: #87ceeb;
+  background-color: #1873de;
   border-radius: 16px;
   width: min-content;
   color: white;
@@ -171,7 +171,7 @@
   padding-top: 20px;
   font-size: 1.5rem;
   font-weight: 900;
-  color: #60a5fa;
+  color: #3994ff;
 }
 .card p:last-child::before {
   content: "";
