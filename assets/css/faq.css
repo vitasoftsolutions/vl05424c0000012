@@ -1,0 +1,82 @@
+.payments {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.faq-section {
+  padding: 70px 0 45px;
+  background: #f9fafc;
+  a {
+    text-decoration: none;
+  }
+}
+.faq-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 50px 0 50px;
+  color: #0d233e;
+}
+.faq-section .faq-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
+    0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+}
+.faq-section h4 {
+  font-size: 20px;
+  color: #0d233e;
+  margin: 0;
+}
+.faq-section .faq-card .card-collapse p {
+  font-size: 15px;
+  margin: 20px 0 0;
+  border-top: 1px solid #ccc;
+  padding: 20px 0 0;
+  line-height: 27px;
+}
+.faq-title > a:not(.collapsed):after {
+  content: "^";
+  font-size: 20px;
+  font-weight: 600;
+}
+.faq-title > a:hover {
+  color: #1873de;
+}
+.faq-title > a {
+  display: block;
+  position: relative;
+  padding-right: 60px;
+  color: #0d233e;
+}
+.faq-title > a:after {
+  /* font-family: "Fontawesome"; */
+  content: "-";
+  font-size: 25px;
+  font-weight: 600;
+
+  position: absolute;
+  top: 4px;
+  right: 0;
+  color: #1873de;
+  font-size: 16px;
+}
+
+.terms-content {
+  padding: 70px 0;
+}
+.terms-content .page-title h5 {
+  color: #0d233e;
+  font-weight: 800;
+  font-size: 24px;
+  margin: 0 0 30px;
+}
+.terms-content p {
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 27px;
+}
+.terms-content p:last-child {
+  margin-bottom: 0;
+}

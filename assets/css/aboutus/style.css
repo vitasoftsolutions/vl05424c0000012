@@ -3,15 +3,15 @@
 }
 
 .about_us_img {
-  border-radius: 30px;
+  border-radius: 25px;
   overflow: hidden;
   padding: 0 !important;
 
-  height: 40vh;
+  height: 45vh;
 }
 
 .about_lendme {
-  width: 40%;
+  width: 55%;
 
   position: absolute;
   top: 20%;
