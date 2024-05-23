@@ -15,7 +15,9 @@ class Carousel {
   constructor(element) {
     this.element = element;
     this.items = document.querySelectorAll(".carousel__item");
-    this.nav = element.parentElement.querySelectorAll(".carousel__nav__item");
+    this.nav = element.parentElement.querySelectorAll(
+      ".product__carousel-nav-item"
+    );
     this.init();
   }
 

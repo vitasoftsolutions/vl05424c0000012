@@ -101,7 +101,7 @@ body {
   gap: 0 1rem;
 }
 
-.carousel__nav__item {
+.product__carousel-nav-item {
   padding: 0.375rem;
   border: 1px solid #eee;
   border-radius: 24px;
@@ -111,7 +111,7 @@ body {
   line-height: 0;
 }
 
-.carousel__nav__item:hover {
+.product__carousel-nav-item:hover {
   background-color: #1873de !important;
   color: white;
 }

@@ -4,7 +4,7 @@
   padding: 3rem 0;
 }
 
-.carousel__nav__item:hover {
+.product__carousel-nav-item:hover {
   background-color: #87ceeb;
   color: white;
 }

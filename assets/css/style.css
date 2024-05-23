@@ -362,3 +362,11 @@ textarea {
   top: 130% !important;
   /* left: 0% !important; */
 }
+
+.footer_section {
+  background-color: #000;
+}
+
+.call_icon {
+  color: "#1873de";
+}
